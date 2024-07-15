@@ -19,4 +19,5 @@ module bcd_counter_1s(clock, bcd, Bs, Vs, Error);
 	assign bcd[2] = B;
 	assign bcd[1] = C;
 	assign bcd[0] = D;
-endmodule
+	
+endmodule 

@@ -61,7 +61,7 @@ module pbl2
 	wire A_10m, B_10m, C_10m, D_10m, E_10m, F_10m, G_10m;
 	// Instanciandos os encoders de BCD para 7-segmentos:
 	//encoder_bcd_7seg_until_9 enc0(.bcd(bcd), .A(A_1s), .B(B_1s), .C(C_1s), .D(D_1s), .E(E_1s), .F(F_1s), .G(G_1s)); // Em conjunto com o dígito 0;
-	decoder_7seg(.bcd(bcd), .A(A_1s), .B(B_1s), .C(C_1s), .D(D_1s), .E(E_1s), .F(F_1s), .G(G_1s)); // Em conjunto com o dígito 0;)
+	decoder_7seg((.bcd(bcd), .A(A_1s), .B(B_1s), .C(C_1s), .D(D_1s), .E(E_1s), .F(F_1s), .G(G_1s)); // Em conjunto com o dígito 0;)
 	// Exibindo os números de acordo com o dígito ativo
 	// Fios para melhorar a organização das expressões
 

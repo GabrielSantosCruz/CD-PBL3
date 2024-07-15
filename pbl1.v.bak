@@ -1,8 +1,8 @@
 // Declaração do Módulo
-module pbl1(H, M, L, Bs, Vs, Ve, Us, Ua, T, Al, E, clock, column, lines, segA, segB, segC, segD, segE, segF, segG, seven_seg_digit);
+module pbl1(H, M, L, Bs, Vs, Ve, Us, Ua, T, Al, E, working, clock, column, lines, segA, segB, segC, segD, segE, segF, segG, seven_seg_digit);
 	// Declaração das Portas
 	input H, M, L, T, Us, Ua, clock;
-	output Bs, Vs, Ve, Al, E, segA, segB, segC, segD, segE, segF, segG;
+	output Bs, Vs, Ve, Al, E, working, segA, segB, segC, segD, segE, segF, segG;
 	output [3:0] seven_seg_digit;
 	output [4:0] column;
 	output [6:0] lines;
@@ -43,9 +43,11 @@ module pbl1(H, M, L, Bs, Vs, Ve, Us, Ua, T, Al, E, clock, column, lines, segA, s
 	and And11 (w14, lowUs, Ua, T, notM, L);
 	or Or5 (w17, w13, w14);
 	and And12 (Vs, w17, notErro); // Fechar o Acionamento em Caso de Erro
-		
+	
+	// Acionamento dos LEDs de status de funcionamento
+	assign working = notErro; // LED verde que indica o funcionamento correto
+	
 	// Instancionando o Módulo que Implementa o PBL 2 e sua Melhorias:
 	pbl2 part2(.H(H), .M(M), .L(L), .Bs(Bs), .Vs(Vs), .clock(clock), .column(column), .lines(lines), .A(segA),
 	.B(segB), .C(segC), .D(segD), .E(segE), .F(segF), .G(segG), .seven_seg_digit(seven_seg_digit), .Error(E));
-	
-endmodule 
+endmodule

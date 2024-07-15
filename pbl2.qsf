@@ -90,9 +90,8 @@ set_location_assignment PIN_88 -to seven_seg_digit[3]
 set_location_assignment PIN_66 -to seven_seg_digit[2]
 set_location_assignment PIN_68 -to seven_seg_digit[1]
 set_location_assignment PIN_37 -to seven_seg_digit[0]
-set_global_assignment -name VERILOG_FILE encoder_bcd_7seg_until_5.v
-set_global_assignment -name VERILOG_FILE encoder_bcd_7seg_until_2.v
-set_global_assignment -name VERILOG_FILE encoder_bcd_7seg_until_9.v
+set_global_assignment -name VERILOG_FILE counter_9to0.v
+set_global_assignment -name VERILOG_FILE decoder_7seg.v
 set_global_assignment -name VERILOG_FILE bcd_counter_1s.v
 set_global_assignment -name VERILOG_FILE pbl2.v
 set_global_assignment -name VERILOG_FILE clock_divisor.v
@@ -101,7 +100,4 @@ set_global_assignment -name VERILOG_FILE bcd_comparator.v
 set_global_assignment -name VERILOG_FILE led_column_alternator.v
 set_global_assignment -name VERILOG_FILE pbl1.v
 set_global_assignment -name VERILOG_FILE flipflop_D.v
-set_global_assignment -name VERILOG_FILE bcd_counter_10s.v
-set_global_assignment -name VERILOG_FILE bcd_counter_1m.v
-set_global_assignment -name VERILOG_FILE bcd_counter_10m.v
 set_global_assignment -name VERILOG_FILE seven_seg_digit_alt.v
