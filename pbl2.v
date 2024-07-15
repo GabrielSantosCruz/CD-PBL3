@@ -47,10 +47,8 @@ module pbl2
 	// bcd_1m = contador de 1 minuto
 	// bcd_10m = contador de 10 minutos
 	// Cada contador depende de um ativador associado ao contador anterior.
-	bcd_counter_1s bcd0(.clock(one_second_clock), .bcd(bcd), .Bs(Bs), .Vs(Vs), .Error(Error)); // Passando Bs, Vs e Error para Desativar o Contador
-	bcd_counter_10s bcd1(.bcd_1s(bcd), .bcd(bcd_10s));
-	bcd_counter_1m bcd2(.bcd_10s(bcd_10s), .bcd(bcd_1m));
-	bcd_counter_10m bcd3(.bcd_1m(bcd_1m), .bcd(bcd_10m));
+	counter_9to0 bcd0(.clock(one_second_clock), .bcd(bcd), .Bs(Bs), .Vs(Vs), .Error(Error)); // Passando Bs, Vs e Error para Desativar o Contador
+	
 	
 	// Varrendo os Dígitos do Mostrador de 7-Segmentos - 1560Hz
 	seven_seg_digit_alt alt1(.clock(led_matriz_clock), .digit(seven_seg_digit));
@@ -62,13 +60,11 @@ module pbl2
 	wire A_1m, B_1m, C_1m, D_1m, E_1m, F_1m, G_1m;
 	wire A_10m, B_10m, C_10m, D_10m, E_10m, F_10m, G_10m;
 	// Instanciandos os encoders de BCD para 7-segmentos:
-	encoder_bcd_7seg_until_9 enc0(.bcd(bcd), .A(A_1s), .B(B_1s), .C(C_1s), .D(D_1s), .E(E_1s), .F(F_1s), .G(G_1s)); // Em conjunto com o dígito 0;
-	encoder_bcd_7seg_until_5 enc1(.bcd(bcd_10s), .A(A_10s), .B(B_10s), .C(C_10s), .D(D_10s), .E(E_10s), .F(F_10s), .G(G_10s)); // Em conjunto com o dígito 1;
-	encoder_bcd_7seg_until_9 enc2(.bcd(bcd_1m), .A(A_1m), .B(B_1m), .C(C_1m), .D(D_1m), .E(E_1m), .F(F_1m), .G(G_1m)); // Em conjunto com o dígito 2;
-	encoder_bcd_7seg_until_2 enc3(.bcd(bcd_10m), .A(A_10m), .B(B_10m), .C(C_10m), .D(D_10m), .E(E_10m), .F(F_10m), .G(G_10m)); // Em conjunto com o dígito 3;
-	
+	//encoder_bcd_7seg_until_9 enc0(.bcd(bcd), .A(A_1s), .B(B_1s), .C(C_1s), .D(D_1s), .E(E_1s), .F(F_1s), .G(G_1s)); // Em conjunto com o dígito 0;
+	decoder_7seg((.bcd(bcd), .A(A_1s), .B(B_1s), .C(C_1s), .D(D_1s), .E(E_1s), .F(F_1s), .G(G_1s)); // Em conjunto com o dígito 0;)
 	// Exibindo os números de acordo com o dígito ativo
 	// Fios para melhorar a organização das expressões
+
 	wire wd0, wd1, wd2, wd3;
 	assign wd0 = seven_seg_digit[0];
 	assign wd1 = seven_seg_digit[1];
