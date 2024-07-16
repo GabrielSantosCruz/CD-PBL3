@@ -1,6 +1,6 @@
-module from_50mhz_to_1hz (clock, one_second_clock, clock_mostradores);
+module from_50mhz_to_1hz (clock, one_second_clock, led_matriz_clock);
 	input clock;
-	output one_second_clock, clock_mostradores;
+	output one_second_clock, led_matriz_clock;
 	
 	// Fios para cascateamento de divisores de clock:
 	wire w0, w1, w2, w3, w4, w5, w6, w7, w8, w9,
@@ -22,8 +22,8 @@ module from_50mhz_to_1hz (clock, one_second_clock, clock_mostradores);
 	clock_divisor d11(.clock(w10), .divided_clock(w11)); // 80us
 	clock_divisor d12(.clock(w11), .divided_clock(w12)); // 160us
 	clock_divisor d13(.clock(w12), .divided_clock(w13)); // 320 us
-	clock_divisor d14(.clock(w13), .divided_clock(clock_mostradores)); // 640 us // 1560Hz
-	clock_divisor d15(.clock(clock_mostradores), .divided_clock(w14)); // 1.280 us
+	clock_divisor d14(.clock(w13), .divided_clock(led_matriz_clock)); // 640 us // 1560Hz
+	clock_divisor d15(.clock(led_matriz_clock), .divided_clock(w14)); // 1.280 us
 	clock_divisor d16(.clock(w14), .divided_clock(w15)); // 2.560 us
 	clock_divisor d17(.clock(w15), .divided_clock(w16)); // 5.120 us
 	clock_divisor d18(.clock(w16), .divided_clock(w17)); // 10.240 us

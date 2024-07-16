@@ -101,3 +101,6 @@ set_global_assignment -name VERILOG_FILE led_column_alternator.v
 set_global_assignment -name VERILOG_FILE pbl1.v
 set_global_assignment -name VERILOG_FILE flipflop_D.v
 set_global_assignment -name VERILOG_FILE seven_seg_digit_alt.v
+set_global_assignment -name VERILOG_FILE counter_5to0.v
+set_global_assignment -name VERILOG_FILE counter_3to0.v
+set_global_assignment -name VERILOG_FILE counter_1to0.v
