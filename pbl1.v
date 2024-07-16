@@ -1,5 +1,5 @@
 // MÓDULO DO CIRCUITO COMBINACIONAL:
-module combinacional (
+module pbl1 (
   input H, M, L, Ua, Us, T, 
   output Ve, Bs, Vs, Al, E;
 );
