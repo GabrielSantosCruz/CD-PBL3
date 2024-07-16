@@ -1,7 +1,7 @@
 // MÓDULO DO CIRCUITO COMBINACIONAL:
 module pbl1 (
   input H, M, L, Ua, Us, T, 
-  output Ve, Bs, Vs, Al, E;
+  output Ve, Bs, Vs, Al, E
 );
 
   // FIOS INTERMEDIÁRIOS:
