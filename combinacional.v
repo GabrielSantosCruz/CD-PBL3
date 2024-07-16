@@ -1,11 +1,11 @@
 // MÓDULO DO CIRCUITO COMBINACIONAL:
 module combinacional (
   input H, M, L, Ua, Us, T, 
-  output Ve, Bs, Vs, Al
+  output Ve, Bs, Vs, Al, E;
 );
 
   // FIOS INTERMEDIÁRIOS:
-  wire W0, W1, W2, W3, W4, W5, W4, W6, W7, W8, W9;
+  wire W0, W1, W2, W3, W4, W5, W4, W6, W7, W8, W9, W10, W11, W12, W13;
 	
 	// VÁLVULA DE ENTRADA:
 	nor nor0 (W8, Al, H);
@@ -29,5 +29,12 @@ module combinacional (
 	and and1 (W2, W0, H);
 	nor nor5 (W1, H, L);
 	or or2 (Al, W1, W2);
+
+  // ERRO:
+  not not1 (W10, L);
+  and and2 (W11, W10, M);
+  not not2 (W12, M);
+  and and3 (W13, W12, H);
+  or or3 (E, W11, W13);
 
 endmodule
