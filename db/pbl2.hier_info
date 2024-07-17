@@ -2,57 +2,70 @@
 H => H.IN1
 M => M.IN1
 L => L.IN1
-T => nand0.IN0
-T => nor4.IN0
-Us => nor2.IN1
+Bs << Bs.DB_MAX_OUTPUT_PORT_TYPE
+Vs << Vs.DB_MAX_OUTPUT_PORT_TYPE
+Ve << or0.DB_MAX_OUTPUT_PORT_TYPE
 Us => nor3.IN1
 Us => nor4.IN1
-Ua => nand0.IN1
-Ua => and0.IN1
+Us => nor5.IN0
+Ua => nand1.IN0
+Ua => and3.IN1
+Key_Ad => comb.IN0
+Ad << comb.DB_MAX_OUTPUT_PORT_TYPE
+T => nand1.IN1
+T => nor5.IN1
+Al << or2.DB_MAX_OUTPUT_PORT_TYPE
+E << E.DB_MAX_OUTPUT_PORT_TYPE
 clock => clock.IN1
-Bs <= Bs.DB_MAX_OUTPUT_PORT_TYPE
-Vs <= Vs.DB_MAX_OUTPUT_PORT_TYPE
-Ve <= or0.DB_MAX_OUTPUT_PORT_TYPE
-Al <= or2.DB_MAX_OUTPUT_PORT_TYPE
-E <= E.DB_MAX_OUTPUT_PORT_TYPE
-segA <= pbl2:part2.A
-segB <= pbl2:part2.B
-segC <= pbl2:part2.C
-segD <= pbl2:part2.D
-segE <= pbl2:part2.E
-segF <= pbl2:part2.F
-segG <= pbl2:part2.G
-seven_seg_digit[0] <= pbl2:part2.seven_seg_digit
-seven_seg_digit[1] <= pbl2:part2.seven_seg_digit
-seven_seg_digit[2] <= pbl2:part2.seven_seg_digit
-seven_seg_digit[3] <= pbl2:part2.seven_seg_digit
-column[0] <= pbl2:part2.column
-column[1] <= pbl2:part2.column
-column[2] <= pbl2:part2.column
-column[3] <= pbl2:part2.column
-column[4] <= pbl2:part2.column
-lines[0] <= pbl2:part2.lines
-lines[1] <= pbl2:part2.lines
-lines[2] <= pbl2:part2.lines
-lines[3] <= pbl2:part2.lines
-lines[4] <= pbl2:part2.lines
-lines[5] <= pbl2:part2.lines
-lines[6] <= pbl2:part2.lines
+column[0] << pbl2:part2.column
+column[1] << pbl2:part2.column
+column[2] << pbl2:part2.column
+column[3] << pbl2:part2.column
+column[4] << pbl2:part2.column
+lines[0] << pbl2:part2.lines
+lines[1] << pbl2:part2.lines
+lines[2] << pbl2:part2.lines
+lines[3] << pbl2:part2.lines
+lines[4] << pbl2:part2.lines
+lines[5] << pbl2:part2.lines
+lines[6] << pbl2:part2.lines
+segA << pbl2:part2.A
+segB << pbl2:part2.B
+segC << pbl2:part2.C
+segD << pbl2:part2.D
+segE << pbl2:part2.E
+segF << pbl2:part2.F
+segG << pbl2:part2.G
+seven_seg_digit[0] << pbl2:part2.seven_seg_digit
+seven_seg_digit[1] << pbl2:part2.seven_seg_digit
+seven_seg_digit_of[0] << pbl2:part2.seven_seg_digit_of
+seven_seg_digit_of[1] << pbl2:part2.seven_seg_digit_of
 
 
 |pbl1|pbl2:part2
 H => lines[2].DATAIN
 M => lines[1].DATAIN
 L => lines[0].DATAIN
-Bs => Bs.IN1
-Vs => Vs.IN1
+Bs => lines.IN1
+Bs => lines.IN1
+Vs => lines.IN1
+Vs => lines.IN1
+Vs => lines.IN1
 clock => clock.IN1
+Error => ~NO_FANOUT~
 one_second_clock <= one_second_clock.DB_MAX_OUTPUT_PORT_TYPE
-led_matriz_clock <= led_matriz_clock.DB_MAX_OUTPUT_PORT_TYPE
-bcd[0] <= bcd[0].DB_MAX_OUTPUT_PORT_TYPE
-bcd[1] <= bcd[1].DB_MAX_OUTPUT_PORT_TYPE
-bcd[2] <= bcd[2].DB_MAX_OUTPUT_PORT_TYPE
-bcd[3] <= bcd[3].DB_MAX_OUTPUT_PORT_TYPE
+clock_mostradores <= clock_mostradores.DB_MAX_OUTPUT_PORT_TYPE
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg_digit[0] <= seven_seg_digit_alt:alt1.digit
+seven_seg_digit[1] <= seven_seg_digit_alt:alt1.digit
+seven_seg_digit_of[0] <= <VCC>
+seven_seg_digit_of[1] <= <VCC>
 column[0] <= led_column_alternator:alt0.column
 column[1] <= led_column_alternator:alt0.column
 column[2] <= led_column_alternator:alt0.column
@@ -65,36 +78,21 @@ lines[3] <= <VCC>
 lines[4] <= lines.DB_MAX_OUTPUT_PORT_TYPE
 lines[5] <= lines.DB_MAX_OUTPUT_PORT_TYPE
 lines[6] <= lines.DB_MAX_OUTPUT_PORT_TYPE
-A <= A.DB_MAX_OUTPUT_PORT_TYPE
-B <= B.DB_MAX_OUTPUT_PORT_TYPE
-C <= C.DB_MAX_OUTPUT_PORT_TYPE
-D <= D.DB_MAX_OUTPUT_PORT_TYPE
-E <= E.DB_MAX_OUTPUT_PORT_TYPE
-F <= F.DB_MAX_OUTPUT_PORT_TYPE
-G <= G.DB_MAX_OUTPUT_PORT_TYPE
-bcd_10s[0] <= <GND>
-bcd_10s[1] <= <GND>
-bcd_10s[2] <= <GND>
-bcd_10s[3] <= <GND>
-bcd_1m[0] <= <GND>
-bcd_1m[1] <= <GND>
-bcd_1m[2] <= <GND>
-bcd_1m[3] <= <GND>
-bcd_10m[0] <= <GND>
-bcd_10m[1] <= <GND>
-bcd_10m[2] <= <GND>
-bcd_10m[3] <= <GND>
-seven_seg_digit[0] <= seven_seg_digit_alt:alt1.digit
-seven_seg_digit[1] <= seven_seg_digit_alt:alt1.digit
-seven_seg_digit[2] <= seven_seg_digit_alt:alt1.digit
-seven_seg_digit[3] <= seven_seg_digit_alt:alt1.digit
-Error => Error.IN1
+bcd[0] <= bcd[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd[1] <= bcd[1].DB_MAX_OUTPUT_PORT_TYPE
+bcd[2] <= bcd[2].DB_MAX_OUTPUT_PORT_TYPE
+bcd[3] <= bcd[3].DB_MAX_OUTPUT_PORT_TYPE
+bcd_10s[0] <= decoder_7seg:comb_47.bcd
+bcd_10s[1] <= decoder_7seg:comb_47.bcd
+bcd_10s[2] <= decoder_7seg:comb_47.bcd
+bcd_10s[3] <= decoder_7seg:comb_47.bcd
 
 
 |pbl1|pbl2:part2|from_50mhz_to_1hz:d0
 clock => clock.IN1
 one_second_clock <= clock_divisor:d25.divided_clock
-led_matriz_clock <= led_matriz_clock.DB_MAX_OUTPUT_PORT_TYPE
+clock_mostradores <= clock_mostradores.DB_MAX_OUTPUT_PORT_TYPE
+clock_7seg <= clock_7seg.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0
@@ -357,73 +355,62 @@ K => w1.IN1
 divided_clock <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|pbl1|pbl2:part2|led_column_alternator:alt0
-clock => column[0]~reg0.CLK
-clock => column[1]~reg0.CLK
-clock => column[2]~reg0.CLK
-clock => column[3]~reg0.CLK
-clock => column[4]~reg0.CLK
-column[0] <= column[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-column[1] <= column[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-column[2] <= column[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-column[3] <= column[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-column[4] <= column[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|pbl1|pbl2:part2|bcd_counter:comb_44
+clk => carry_out~reg0.CLK
+clk => carregar.CLK
+clk => contagem[0].CLK
+clk => contagem[1].CLK
+clk => contagem[2].CLK
+clk => contagem[3].CLK
+rst => carry_out~reg0.ACLR
+rst => carregar.PRESET
+rst => contagem[0].PRESET
+rst => contagem[1].ACLR
+rst => contagem[2].ACLR
+rst => contagem[3].PRESET
+dado[0] => contagem.DATAB
+dado[1] => contagem.DATAB
+dado[2] => contagem.DATAB
+dado[3] => contagem.DATAB
+bcd_out[0] <= contagem[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd_out[1] <= contagem[1].DB_MAX_OUTPUT_PORT_TYPE
+bcd_out[2] <= contagem[2].DB_MAX_OUTPUT_PORT_TYPE
+bcd_out[3] <= contagem[3].DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|pbl1|pbl2:part2|counter_9to0:bcd0
-clock => clock.IN4
-bcd[0] <= flipflop_D:c3.Q
-bcd[1] <= flipflop_D:c2.Q
-bcd[2] <= flipflop_D:c1.Q
-bcd[3] <= flipflop_D:c0.Q
-Bs => d3.IN0
-Bs => d1.IN0
-Bs => d0.IN0
-Vs => d3.IN1
-Vs => d1.IN1
-Vs => d0.IN1
-Error => d3.IN1
-Error => d2.IN1
-Error => d1.IN1
-Error => d0.IN1
-
-
-|pbl1|pbl2:part2|counter_9to0:bcd0|flipflop_D:c0
-D => Q~reg0.DATAIN
-clock => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|pbl1|pbl2:part2|counter_9to0:bcd0|flipflop_D:c1
-D => Q~reg0.DATAIN
-clock => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|pbl1|pbl2:part2|counter_9to0:bcd0|flipflop_D:c2
-D => Q~reg0.DATAIN
-clock => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|pbl1|pbl2:part2|counter_9to0:bcd0|flipflop_D:c3
-D => Q~reg0.DATAIN
-clock => Q~reg0.CLK
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|pbl1|pbl2:part2|bcd_counter:comb_45
+clk => carry_out~reg0.CLK
+clk => carregar.CLK
+clk => contagem[0].CLK
+clk => contagem[1].CLK
+clk => contagem[2].CLK
+clk => contagem[3].CLK
+rst => carry_out~reg0.ACLR
+rst => carregar.PRESET
+rst => contagem[0].PRESET
+rst => contagem[1].ACLR
+rst => contagem[2].ACLR
+rst => contagem[3].PRESET
+dado[0] => contagem.DATAB
+dado[1] => contagem.DATAB
+dado[2] => contagem.DATAB
+dado[3] => contagem.DATAB
+bcd_out[0] <= contagem[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd_out[1] <= contagem[1].DB_MAX_OUTPUT_PORT_TYPE
+bcd_out[2] <= contagem[2].DB_MAX_OUTPUT_PORT_TYPE
+bcd_out[3] <= contagem[3].DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pbl1|pbl2:part2|seven_seg_digit_alt:alt1
 clock => digit[0]~reg0.CLK
 clock => digit[1]~reg0.CLK
-clock => digit[2]~reg0.CLK
-clock => digit[3]~reg0.CLK
 digit[0] <= digit[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 digit[1] <= digit[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-digit[2] <= digit[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-digit[3] <= digit[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|pbl1|pbl2:part2|decoder_7seg:enc0
+|pbl1|pbl2:part2|decoder_7seg:comb_46
 bcd[0] => A.IN1
 bcd[0] => B.IN1
 bcd[0] => D.IN1
@@ -450,5 +437,47 @@ D <= D.DB_MAX_OUTPUT_PORT_TYPE
 E <= E.DB_MAX_OUTPUT_PORT_TYPE
 F <= F.DB_MAX_OUTPUT_PORT_TYPE
 G <= G.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl1|pbl2:part2|decoder_7seg:comb_47
+bcd[0] => A.IN1
+bcd[0] => B.IN1
+bcd[0] => D.IN1
+bcd[0] => E.IN1
+bcd[0] => F.IN1
+bcd[0] => F.IN0
+bcd[0] => A.IN1
+bcd[0] => B.IN1
+bcd[0] => C.IN1
+bcd[1] => B.IN0
+bcd[1] => C.IN0
+bcd[1] => F.IN1
+bcd[1] => A.IN0
+bcd[1] => A.IN1
+bcd[2] => A.IN1
+bcd[2] => B.IN1
+bcd[2] => A.IN0
+bcd[2] => C.IN1
+bcd[3] => A.IN1
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pbl1|pbl2:part2|led_column_alternator:alt0
+clock => column[0]~reg0.CLK
+clock => column[1]~reg0.CLK
+clock => column[2]~reg0.CLK
+clock => column[3]~reg0.CLK
+clock => column[4]~reg0.CLK
+column[0] <= column[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+column[1] <= column[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+column[2] <= column[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+column[3] <= column[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+column[4] <= column[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
