@@ -20,5 +20,4 @@ module counter_1to0(clock, bcd, Bs, Vs, Error); // contador que vai de 9 a 0
 	assign bcd[2] = B;
 	assign bcd[1] = C;
 	assign bcd[0] = D;
-
 endmodule 
