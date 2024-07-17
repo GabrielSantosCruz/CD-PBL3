@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pbl2
-Tue Jul 16 21:47:52 2024
+Tue Jul 16 22:29:38 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -16,34 +16,37 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   8. Registers Removed During Synthesis
   9. General Register Statistics
  10. Inverted Register Statistics
- 11. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25"
- 12. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d24"
- 13. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d23"
- 14. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d22"
- 15. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d21"
- 16. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d20"
- 17. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d19"
- 18. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d18"
- 19. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d17"
- 20. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d16"
- 21. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d15"
- 22. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14"
- 23. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d13"
- 24. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d12"
- 25. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d11"
- 26. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d10"
- 27. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d9"
- 28. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d8"
- 29. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d7"
- 30. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d6"
- 31. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d5"
- 32. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d4"
- 33. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d3"
- 34. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d2"
- 35. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d1"
- 36. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0"
- 37. Port Connectivity Checks: "pbl2:part2"
- 38. Analysis & Synthesis Messages
+ 11. Port Connectivity Checks: "pbl2:part2|seven_seg_digit_alt:alt1"
+ 12. Port Connectivity Checks: "pbl2:part2|counter_3to0:bcd1|flipflop_D:c1"
+ 13. Port Connectivity Checks: "pbl2:part2|counter_3to0:bcd1|flipflop_D:c0"
+ 14. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25"
+ 15. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d24"
+ 16. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d23"
+ 17. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d22"
+ 18. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d21"
+ 19. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d20"
+ 20. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d19"
+ 21. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d18"
+ 22. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d17"
+ 23. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d16"
+ 24. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d15"
+ 25. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14"
+ 26. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d13"
+ 27. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d12"
+ 28. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d11"
+ 29. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d10"
+ 30. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d9"
+ 31. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d8"
+ 32. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d7"
+ 33. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d6"
+ 34. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d5"
+ 35. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d4"
+ 36. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d3"
+ 37. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d2"
+ 38. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d1"
+ 39. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0"
+ 40. Port Connectivity Checks: "pbl2:part2"
+ 41. Analysis & Synthesis Messages
 
 
 
@@ -69,12 +72,12 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue Jul 16 21:47:52 2024       ;
+; Analysis & Synthesis Status ; Successful - Tue Jul 16 22:29:38 2024       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; pbl2                                        ;
 ; Top-level Entity Name       ; pbl1                                        ;
 ; Family                      ; MAX II                                      ;
-; Total logic elements        ; 92                                          ;
+; Total logic elements        ; 84                                          ;
 ; Total pins                  ; 35                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
@@ -168,55 +171,56 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                     ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
-; pbl2.v                           ; yes             ; User Verilog HDL File        ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v                  ;         ;
-; clock_divisor.v                  ; yes             ; User Verilog HDL File        ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/clock_divisor.v         ;         ;
-; from_50mhz_to_1hz.v              ; yes             ; User Verilog HDL File        ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/from_50mhz_to_1hz.v     ;         ;
-; led_column_alternator.v          ; yes             ; User Verilog HDL File        ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/led_column_alternator.v ;         ;
-; pbl1.v                           ; yes             ; User Verilog HDL File        ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl1.v                  ;         ;
-; flipflop_D.v                     ; yes             ; User Verilog HDL File        ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/flipflop_D.v            ;         ;
-; seven_seg_digit_alt.v            ; yes             ; User Verilog HDL File        ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/seven_seg_digit_alt.v   ;         ;
-; counter_9to0.v                   ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/counter_9to0.v          ;         ;
-; decoder_7seg.v                   ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/decoder_7seg.v          ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------+---------+
+; counter_9to0.v                   ; yes             ; User Verilog HDL File  ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/counter_9to0.v          ;         ;
+; decoder_7seg.v                   ; yes             ; User Verilog HDL File  ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/decoder_7seg.v          ;         ;
+; pbl2.v                           ; yes             ; User Verilog HDL File  ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v                  ;         ;
+; clock_divisor.v                  ; yes             ; User Verilog HDL File  ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/clock_divisor.v         ;         ;
+; from_50mhz_to_1hz.v              ; yes             ; User Verilog HDL File  ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/from_50mhz_to_1hz.v     ;         ;
+; led_column_alternator.v          ; yes             ; User Verilog HDL File  ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/led_column_alternator.v ;         ;
+; pbl1.v                           ; yes             ; User Verilog HDL File  ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl1.v                  ;         ;
+; flipflop_D.v                     ; yes             ; User Verilog HDL File  ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/flipflop_D.v            ;         ;
+; seven_seg_digit_alt.v            ; yes             ; User Verilog HDL File  ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/seven_seg_digit_alt.v   ;         ;
+; counter_3to0.v                   ; yes             ; User Verilog HDL File  ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/counter_3to0.v          ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                       ;
-+---------------------------------------------+-----------------------------------------------------+
-; Resource                                    ; Usage                                               ;
-+---------------------------------------------+-----------------------------------------------------+
-; Total logic elements                        ; 92                                                  ;
-;     -- Combinational with no register       ; 27                                                  ;
-;     -- Register only                        ; 5                                                   ;
-;     -- Combinational with a register        ; 60                                                  ;
-;                                             ;                                                     ;
-; Logic element usage by number of LUT inputs ;                                                     ;
-;     -- 4 input functions                    ; 17                                                  ;
-;     -- 3 input functions                    ; 9                                                   ;
-;     -- 2 input functions                    ; 5                                                   ;
-;     -- 1 input functions                    ; 56                                                  ;
-;     -- 0 input functions                    ; 0                                                   ;
-;                                             ;                                                     ;
-; Logic elements by mode                      ;                                                     ;
-;     -- normal mode                          ; 92                                                  ;
-;     -- arithmetic mode                      ; 0                                                   ;
-;     -- qfbk mode                            ; 0                                                   ;
-;     -- register cascade mode                ; 0                                                   ;
-;     -- synchronous clear/load mode          ; 0                                                   ;
-;     -- asynchronous clear/load mode         ; 0                                                   ;
-;                                             ;                                                     ;
-; Total registers                             ; 65                                                  ;
-; I/O pins                                    ; 35                                                  ;
-; Maximum fan-out node                        ; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14|Q ;
-; Maximum fan-out                             ; 12                                                  ;
-; Total fan-out                               ; 258                                                 ;
-; Average fan-out                             ; 2.03                                                ;
-+---------------------------------------------+-----------------------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                ;
++---------------------------------------------+----------------------------------------------+
+; Resource                                    ; Usage                                        ;
++---------------------------------------------+----------------------------------------------+
+; Total logic elements                        ; 84                                           ;
+;     -- Combinational with no register       ; 23                                           ;
+;     -- Register only                        ; 3                                            ;
+;     -- Combinational with a register        ; 58                                           ;
+;                                             ;                                              ;
+; Logic element usage by number of LUT inputs ;                                              ;
+;     -- 4 input functions                    ; 16                                           ;
+;     -- 3 input functions                    ; 11                                           ;
+;     -- 2 input functions                    ; 0                                            ;
+;     -- 1 input functions                    ; 54                                           ;
+;     -- 0 input functions                    ; 0                                            ;
+;                                             ;                                              ;
+; Logic elements by mode                      ;                                              ;
+;     -- normal mode                          ; 84                                           ;
+;     -- arithmetic mode                      ; 0                                            ;
+;     -- qfbk mode                            ; 0                                            ;
+;     -- register cascade mode                ; 0                                            ;
+;     -- synchronous clear/load mode          ; 0                                            ;
+;     -- asynchronous clear/load mode         ; 0                                            ;
+;                                             ;                                              ;
+; Total registers                             ; 61                                           ;
+; I/O pins                                    ; 35                                           ;
+; Maximum fan-out node                        ; pbl2:part2|counter_9to0:bcd0|flipflop_D:c3|Q ;
+; Maximum fan-out                             ; 11                                           ;
+; Total fan-out                               ; 238                                          ;
+; Average fan-out                             ; 2.00                                         ;
++---------------------------------------------+----------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -224,14 +228,14 @@ refer to the applicable agreement for further details.
 +------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node         ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                     ; Entity Name           ; Library Name ;
 +------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+-----------------------+--------------+
-; |pbl1                              ; 92 (6)      ; 65           ; 0          ; 35   ; 0            ; 27 (6)       ; 5 (0)             ; 60 (0)           ; 0 (0)           ; 0 (0)      ; |pbl1                                                   ; pbl1                  ; work         ;
-;    |pbl2:part2|                    ; 86 (17)     ; 65           ; 0          ; 0    ; 0            ; 21 (17)      ; 5 (0)             ; 60 (0)           ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2                                        ; pbl2                  ; work         ;
+; |pbl1                              ; 84 (6)      ; 61           ; 0          ; 35   ; 0            ; 23 (6)       ; 3 (0)             ; 58 (0)           ; 0 (0)           ; 0 (0)      ; |pbl1                                                   ; pbl1                  ; work         ;
+;    |pbl2:part2|                    ; 78 (7)      ; 61           ; 0          ; 0    ; 0            ; 17 (7)       ; 3 (0)             ; 58 (0)           ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2                                        ; pbl2                  ; work         ;
 ;       |counter_9to0:bcd0|          ; 7 (3)       ; 4            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|counter_9to0:bcd0                      ; counter_9to0          ; work         ;
 ;          |flipflop_D:c0|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|counter_9to0:bcd0|flipflop_D:c0        ; flipflop_D            ; work         ;
 ;          |flipflop_D:c1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|counter_9to0:bcd0|flipflop_D:c1        ; flipflop_D            ; work         ;
 ;          |flipflop_D:c2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|counter_9to0:bcd0|flipflop_D:c2        ; flipflop_D            ; work         ;
 ;          |flipflop_D:c3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|counter_9to0:bcd0|flipflop_D:c3        ; flipflop_D            ; work         ;
-;       |decoder_7seg:enc0|          ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|decoder_7seg:enc0                      ; decoder_7seg          ; work         ;
+;       |decoder_7seg:comb_42|       ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|decoder_7seg:comb_42                   ; decoder_7seg          ; work         ;
 ;       |from_50mhz_to_1hz:d0|       ; 52 (0)      ; 52           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 52 (0)           ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0                   ; from_50mhz_to_1hz     ; work         ;
 ;          |clock_divisor:d0|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0  ; clock_divisor         ; work         ;
 ;          |clock_divisor:d10|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d10 ; clock_divisor         ; work         ;
@@ -260,7 +264,6 @@ refer to the applicable agreement for further details.
 ;          |clock_divisor:d8|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d8  ; clock_divisor         ; work         ;
 ;          |clock_divisor:d9|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d9  ; clock_divisor         ; work         ;
 ;       |led_column_alternator:alt0| ; 5 (5)       ; 5            ; 0          ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|led_column_alternator:alt0             ; led_column_alternator ; work         ;
-;       |seven_seg_digit_alt:alt1|   ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|seven_seg_digit_alt:alt1               ; seven_seg_digit_alt   ; work         ;
 +------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -270,6 +273,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------+----------------------------------------+
 ; Register name                                        ; Reason for Removal                     ;
 +------------------------------------------------------+----------------------------------------+
+; pbl2:part2|seven_seg_digit_alt:alt1|digit[0,1]       ; Stuck at GND due to stuck port clock   ;
 ; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25|w1 ; Stuck at VCC due to stuck port data_in ;
 ; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25|w0 ; Stuck at VCC due to stuck port data_in ;
 ; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d24|w1 ; Stuck at VCC due to stuck port data_in ;
@@ -322,7 +326,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d1|w0  ; Stuck at VCC due to stuck port data_in ;
 ; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0|w1  ; Stuck at VCC due to stuck port data_in ;
 ; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0|w0  ; Stuck at VCC due to stuck port data_in ;
-; Total Number of Removed Registers = 52               ;                                        ;
+; Total Number of Removed Registers = 54               ;                                        ;
 +------------------------------------------------------+----------------------------------------+
 
 
@@ -331,7 +335,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 65    ;
+; Total registers                              ; 61    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -346,12 +350,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------+---------+
 ; Inverted Register                               ; Fan out ;
 +-------------------------------------------------+---------+
-; pbl2:part2|seven_seg_digit_alt:alt1|digit[1]    ; 2       ;
-; pbl2:part2|seven_seg_digit_alt:alt1|digit[2]    ; 2       ;
-; pbl2:part2|seven_seg_digit_alt:alt1|digit[3]    ; 2       ;
 ; pbl2:part2|led_column_alternator:alt0|column[0] ; 5       ;
-; Total number of inverted registers = 4          ;         ;
+; Total number of inverted registers = 1          ;         ;
 +-------------------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|seven_seg_digit_alt:alt1"                                                                                                                                   ;
++-------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                                                               ;
++-------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; digit ; Output ; Warning  ; Output or bidir port (2 bits) is smaller than the port expression (4 bits) it drives.  The 2 most-significant bit(s) in the port expression will be connected to GND. ;
++-------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|counter_3to0:bcd1|flipflop_D:c1" ;
++------+-------+----------+----------------------------------------------+
+; Port ; Type  ; Severity ; Details                                      ;
++------+-------+----------+----------------------------------------------+
+; D    ; Input ; Info     ; Stuck at GND                                 ;
++------+-------+----------+----------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|counter_3to0:bcd1|flipflop_D:c0" ;
++------+-------+----------+----------------------------------------------+
+; Port ; Type  ; Severity ; Details                                      ;
++------+-------+----------+----------------------------------------------+
+; D    ; Input ; Info     ; Stuck at GND                                 ;
++------+-------+----------+----------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -614,18 +642,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "pbl2:part2"                                                                                                          ;
-+------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port             ; Type   ; Severity ; Details                                                                                                  ;
-+------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; one_second_clock ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; led_matriz_clock ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; bcd              ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; bcd_10s          ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; bcd_1m           ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; bcd_10m          ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2"                                                                                                           ;
++-------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                  ;
++-------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; one_second_clock  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; clock_mostradores ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; bcd               ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; bcd_10s           ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; bcd_1m            ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; bcd_10m           ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -634,16 +662,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Jul 16 21:47:35 2024
+    Info: Processing started: Tue Jul 16 22:29:22 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pbl2 -c pbl2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
-Warning (12019): Can't analyze file -- file encoder_bcd_7seg_until_5.v is missing
-Warning (12019): Can't analyze file -- file encoder_bcd_7seg_until_2.v is missing
-Info (12021): Found 1 design units, including 1 entities, in source file encoder_bcd_7seg_until_9.v
-    Info (12023): Found entity 1: encoder_bcd_7seg_until_9 File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/encoder_bcd_7seg_until_9.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file bcd_counter_1s.v
-    Info (12023): Found entity 1: bcd_counter_1s File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/bcd_counter_1s.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file counter_9to0.v
+    Info (12023): Found entity 1: counter_9to0 File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/counter_9to0.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder_7seg.v
+    Info (12023): Found entity 1: decoder_7seg File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/decoder_7seg.v Line: 1
+Warning (12019): Can't analyze file -- file bcd_counter_1s.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file pbl2.v
     Info (12023): Found entity 1: pbl2 File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clock_divisor.v
@@ -657,92 +684,66 @@ Info (12021): Found 1 design units, including 1 entities, in source file pbl1.v
     Info (12023): Found entity 1: pbl1 File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl1.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flipflop_d.v
     Info (12023): Found entity 1: flipflop_D File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/flipflop_D.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file bcd_counter_10s.v
-    Info (12023): Found entity 1: bcd_counter_10s File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/bcd_counter_10s.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file bcd_counter_1m.v
-    Info (12023): Found entity 1: bcd_counter_1m File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/bcd_counter_1m.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file bcd_counter_10m.v
-    Info (12023): Found entity 1: bcd_counter_10m File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/bcd_counter_10m.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file seven_seg_digit_alt.v
     Info (12023): Found entity 1: seven_seg_digit_alt File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/seven_seg_digit_alt.v Line: 1
-Info (12127): Elaborating entity "pbl1" for the top level hierarchy
-Info (12128): Elaborating entity "pbl2" for hierarchy "pbl2:part2" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl1.v Line: 44
-Warning (10858): Verilog HDL warning at pbl2.v(59): object A_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
-Warning (10858): Verilog HDL warning at pbl2.v(59): object B_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
-Warning (10858): Verilog HDL warning at pbl2.v(59): object C_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
-Warning (10858): Verilog HDL warning at pbl2.v(59): object D_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
-Warning (10858): Verilog HDL warning at pbl2.v(59): object E_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
-Warning (10858): Verilog HDL warning at pbl2.v(59): object F_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
-Warning (10858): Verilog HDL warning at pbl2.v(59): object G_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
-Warning (10858): Verilog HDL warning at pbl2.v(60): object A_1m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
-Warning (10858): Verilog HDL warning at pbl2.v(60): object B_1m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
-Warning (10858): Verilog HDL warning at pbl2.v(60): object C_1m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
-Warning (10858): Verilog HDL warning at pbl2.v(60): object D_1m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
-Warning (10858): Verilog HDL warning at pbl2.v(60): object E_1m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
-Warning (10858): Verilog HDL warning at pbl2.v(60): object F_1m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
-Warning (10858): Verilog HDL warning at pbl2.v(60): object G_1m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
-Warning (10858): Verilog HDL warning at pbl2.v(61): object A_10m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
-Warning (10858): Verilog HDL warning at pbl2.v(61): object B_10m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
-Warning (10858): Verilog HDL warning at pbl2.v(61): object C_10m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
-Warning (10858): Verilog HDL warning at pbl2.v(61): object D_10m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
-Warning (10858): Verilog HDL warning at pbl2.v(61): object E_10m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
-Warning (10858): Verilog HDL warning at pbl2.v(61): object F_10m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
-Warning (10858): Verilog HDL warning at pbl2.v(61): object G_10m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
-Warning (10036): Verilog HDL or VHDL warning at pbl2.v(88): object "twenty_five_minutes" assigned a value but never read File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 88
-Warning (10036): Verilog HDL or VHDL warning at pbl2.v(88): object "twenty_minutes" assigned a value but never read File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 88
-Warning (10036): Verilog HDL or VHDL warning at pbl2.v(88): object "fifteen_minutes" assigned a value but never read File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 88
-Warning (10036): Verilog HDL or VHDL warning at pbl2.v(88): object "ten_minutes" assigned a value but never read File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 88
-Warning (10036): Verilog HDL or VHDL warning at pbl2.v(88): object "zero_minutes" assigned a value but never read File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 88
-Warning (10030): Net "A_10s" at pbl2.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
-Warning (10030): Net "B_10s" at pbl2.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
-Warning (10030): Net "C_10s" at pbl2.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
-Warning (10030): Net "D_10s" at pbl2.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
-Warning (10030): Net "E_10s" at pbl2.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
-Warning (10030): Net "F_10s" at pbl2.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
-Warning (10030): Net "G_10s" at pbl2.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
-Warning (10030): Net "A_1m" at pbl2.v(60) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
-Warning (10030): Net "B_1m" at pbl2.v(60) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
-Warning (10030): Net "C_1m" at pbl2.v(60) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
-Warning (10030): Net "D_1m" at pbl2.v(60) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
-Warning (10030): Net "E_1m" at pbl2.v(60) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
-Warning (10030): Net "F_1m" at pbl2.v(60) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
-Warning (10030): Net "G_1m" at pbl2.v(60) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
-Warning (10030): Net "A_10m" at pbl2.v(61) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
-Warning (10030): Net "B_10m" at pbl2.v(61) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
-Warning (10030): Net "C_10m" at pbl2.v(61) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
-Warning (10030): Net "D_10m" at pbl2.v(61) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
-Warning (10030): Net "E_10m" at pbl2.v(61) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
-Warning (10030): Net "F_10m" at pbl2.v(61) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
-Warning (10030): Net "G_10m" at pbl2.v(61) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
-Warning (10034): Output port "bcd_10s" at pbl2.v(15) has no driver File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 15
-Warning (10034): Output port "bcd_1m" at pbl2.v(15) has no driver File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 15
-Warning (10034): Output port "bcd_10m" at pbl2.v(15) has no driver File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 15
-Info (12128): Elaborating entity "from_50mhz_to_1hz" for hierarchy "pbl2:part2|from_50mhz_to_1hz:d0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 18
-Info (12128): Elaborating entity "clock_divisor" for hierarchy "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/from_50mhz_to_1hz.v Line: 11
-Info (12128): Elaborating entity "led_column_alternator" for hierarchy "pbl2:part2|led_column_alternator:alt0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 21
-Warning (12125): Using design file counter_9to0.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: counter_9to0 File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/counter_9to0.v Line: 1
-Info (12128): Elaborating entity "counter_9to0" for hierarchy "pbl2:part2|counter_9to0:bcd0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 50
-Info (12128): Elaborating entity "flipflop_D" for hierarchy "pbl2:part2|counter_9to0:bcd0|flipflop_D:c0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/counter_9to0.v Line: 14
-Info (12128): Elaborating entity "seven_seg_digit_alt" for hierarchy "pbl2:part2|seven_seg_digit_alt:alt1" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 54
-Warning (12125): Using design file decoder_7seg.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: decoder_7seg File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/decoder_7seg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file counter_5to0.v
+    Info (12023): Found entity 1: counter_5to0 File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/counter_5to0.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file counter_3to0.v
+    Info (12023): Found entity 1: counter_3to0 File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/counter_3to0.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file counter_1to0.v
+    Info (12023): Found entity 1: counter_1to0 File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/counter_1to0.v Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at decoder_7seg.v(6): created implicit net for "a" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/decoder_7seg.v Line: 6
 Warning (10236): Verilog HDL Implicit Net warning at decoder_7seg.v(7): created implicit net for "b" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/decoder_7seg.v Line: 7
 Warning (10236): Verilog HDL Implicit Net warning at decoder_7seg.v(8): created implicit net for "c" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/decoder_7seg.v Line: 8
 Warning (10236): Verilog HDL Implicit Net warning at decoder_7seg.v(9): created implicit net for "d" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/decoder_7seg.v Line: 9
-Info (12128): Elaborating entity "decoder_7seg" for hierarchy "pbl2:part2|decoder_7seg:enc0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 65
-Warning (12241): 27 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (10236): Verilog HDL Implicit Net warning at pbl2.v(41): created implicit net for "led_matriz_clock" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 41
+Critical Warning (10846): Verilog HDL Instantiation warning at pbl2.v(44): instance has no name File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 44
+Info (12127): Elaborating entity "pbl1" for the top level hierarchy
+Info (12128): Elaborating entity "pbl2" for hierarchy "pbl2:part2" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl1.v Line: 44
+Warning (10858): Verilog HDL warning at pbl2.v(33): object A_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 33
+Warning (10858): Verilog HDL warning at pbl2.v(33): object B_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 33
+Warning (10858): Verilog HDL warning at pbl2.v(33): object C_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 33
+Warning (10858): Verilog HDL warning at pbl2.v(33): object D_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 33
+Warning (10858): Verilog HDL warning at pbl2.v(33): object E_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 33
+Warning (10858): Verilog HDL warning at pbl2.v(33): object F_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 33
+Warning (10858): Verilog HDL warning at pbl2.v(33): object G_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 33
+Warning (10036): Verilog HDL or VHDL warning at pbl2.v(79): object "twenty_five_minutes" assigned a value but never read File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 79
+Warning (10036): Verilog HDL or VHDL warning at pbl2.v(79): object "twenty_minutes" assigned a value but never read File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 79
+Warning (10036): Verilog HDL or VHDL warning at pbl2.v(79): object "fifteen_minutes" assigned a value but never read File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 79
+Warning (10036): Verilog HDL or VHDL warning at pbl2.v(79): object "ten_minutes" assigned a value but never read File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 79
+Warning (10036): Verilog HDL or VHDL warning at pbl2.v(79): object "zero_minutes" assigned a value but never read File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 79
+Warning (10030): Net "A_10s" at pbl2.v(33) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 33
+Warning (10030): Net "B_10s" at pbl2.v(33) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 33
+Warning (10030): Net "C_10s" at pbl2.v(33) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 33
+Warning (10030): Net "D_10s" at pbl2.v(33) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 33
+Warning (10030): Net "E_10s" at pbl2.v(33) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 33
+Warning (10030): Net "F_10s" at pbl2.v(33) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 33
+Warning (10030): Net "G_10s" at pbl2.v(33) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 33
+Warning (10034): Output port "bcd_1m" at pbl2.v(8) has no driver File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 8
+Warning (10034): Output port "bcd_10m" at pbl2.v(9) has no driver File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 9
+Info (12128): Elaborating entity "from_50mhz_to_1hz" for hierarchy "pbl2:part2|from_50mhz_to_1hz:d0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 12
+Info (12128): Elaborating entity "clock_divisor" for hierarchy "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/from_50mhz_to_1hz.v Line: 11
+Info (12128): Elaborating entity "counter_9to0" for hierarchy "pbl2:part2|counter_9to0:bcd0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 38
+Info (12128): Elaborating entity "flipflop_D" for hierarchy "pbl2:part2|counter_9to0:bcd0|flipflop_D:c0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/counter_9to0.v Line: 14
+Info (12128): Elaborating entity "counter_3to0" for hierarchy "pbl2:part2|counter_3to0:bcd1" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 39
+Info (12128): Elaborating entity "seven_seg_digit_alt" for hierarchy "pbl2:part2|seven_seg_digit_alt:alt1" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 41
+Info (12128): Elaborating entity "decoder_7seg" for hierarchy "pbl2:part2|decoder_7seg:comb_42" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 44
+Info (12128): Elaborating entity "led_column_alternator" for hierarchy "pbl2:part2|led_column_alternator:alt0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 52
+Warning (12241): 28 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "lines[3]" is stuck at VCC File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl1.v Line: 7
-Info (21057): Implemented 127 device resources after synthesis - the final resource count might be different
+    Warning (13410): Pin "seven_seg_digit[0]" is stuck at GND File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl1.v Line: 5
+    Warning (13410): Pin "seven_seg_digit[1]" is stuck at GND File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl1.v Line: 5
+    Warning (13410): Pin "seven_seg_digit[2]" is stuck at VCC File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl1.v Line: 5
+    Warning (13410): Pin "seven_seg_digit[3]" is stuck at VCC File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl1.v Line: 5
+Info (21057): Implemented 119 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 92 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 63 warnings
+    Info (21061): Implemented 84 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
     Info: Peak virtual memory: 4707 megabytes
-    Info: Processing ended: Tue Jul 16 21:47:52 2024
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Processing ended: Tue Jul 16 22:29:38 2024
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:15
 
 

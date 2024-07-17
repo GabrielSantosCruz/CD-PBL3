@@ -1,5 +1,5 @@
 Fitter report for pbl2
-Tue Jul 16 21:47:56 2024
+Tue Jul 16 22:29:42 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -56,14 +56,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Tue Jul 16 21:47:56 2024       ;
+; Fitter Status         ; Successful - Tue Jul 16 22:29:42 2024       ;
 ; Quartus Prime Version ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name         ; pbl2                                        ;
 ; Top-level Entity Name ; pbl1                                        ;
 ; Family                ; MAX II                                      ;
 ; Device                ; EPM240T100C5                                ;
 ; Timing Models         ; Final                                       ;
-; Total logic elements  ; 89 / 240 ( 37 % )                           ;
+; Total logic elements  ; 81 / 240 ( 34 % )                           ;
 ; Total pins            ; 35 / 80 ( 44 % )                            ;
 ; Total virtual pins    ; 0                                           ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                               ;
@@ -127,13 +127,13 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
-; Average used               ; 1.13        ;
+; Average used               ; 1.14        ;
 ; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.2%      ;
-;     Processors 3-8         ;   1.8%      ;
+;     Processor 2            ;   2.3%      ;
+;     Processors 3-8         ;   1.9%      ;
 +----------------------------+-------------+
 
 
@@ -157,27 +157,27 @@ The pin-out file can be found in C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL
 +---------------------------------------------+--------------------+
 ; Resource                                    ; Usage              ;
 +---------------------------------------------+--------------------+
-; Total logic elements                        ; 89 / 240 ( 37 % )  ;
-;     -- Combinational with no register       ; 24                 ;
-;     -- Register only                        ; 2                  ;
-;     -- Combinational with a register        ; 63                 ;
+; Total logic elements                        ; 81 / 240 ( 34 % )  ;
+;     -- Combinational with no register       ; 20                 ;
+;     -- Register only                        ; 0                  ;
+;     -- Combinational with a register        ; 61                 ;
 ;                                             ;                    ;
 ; Logic element usage by number of LUT inputs ;                    ;
-;     -- 4 input functions                    ; 17                 ;
-;     -- 3 input functions                    ; 9                  ;
-;     -- 2 input functions                    ; 5                  ;
-;     -- 1 input functions                    ; 56                 ;
+;     -- 4 input functions                    ; 16                 ;
+;     -- 3 input functions                    ; 11                 ;
+;     -- 2 input functions                    ; 0                  ;
+;     -- 1 input functions                    ; 54                 ;
 ;     -- 0 input functions                    ; 0                  ;
 ;                                             ;                    ;
 ; Logic elements by mode                      ;                    ;
-;     -- normal mode                          ; 89                 ;
+;     -- normal mode                          ; 81                 ;
 ;     -- arithmetic mode                      ; 0                  ;
 ;     -- qfbk mode                            ; 3                  ;
 ;     -- register cascade mode                ; 0                  ;
-;     -- synchronous clear/load mode          ; 5                  ;
+;     -- synchronous clear/load mode          ; 3                  ;
 ;     -- asynchronous clear/load mode         ; 0                  ;
 ;                                             ;                    ;
-; Total registers                             ; 65 / 240 ( 27 % )  ;
+; Total registers                             ; 61 / 240 ( 25 % )  ;
 ; Total LABs                                  ; 19 / 24 ( 79 % )   ;
 ; Logic elements in carry chains              ; 0                  ;
 ; Virtual pins                                ; 0                  ;
@@ -192,12 +192,12 @@ The pin-out file can be found in C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL
 ; Global signals                              ; 4                  ;
 ;     -- Global clocks                        ; 4 / 4 ( 100 % )    ;
 ; JTAGs                                       ; 0 / 1 ( 0 % )      ;
-; Average interconnect usage (total/H/V)      ; 4.3% / 4.5% / 4.0% ;
-; Peak interconnect usage (total/H/V)         ; 4.3% / 4.5% / 4.0% ;
-; Maximum fan-out                             ; 12                 ;
-; Highest non-global fan-out                  ; 10                 ;
-; Total fan-out                               ; 252                ;
-; Average fan-out                             ; 2.03               ;
+; Average interconnect usage (total/H/V)      ; 3.8% / 3.8% / 3.7% ;
+; Peak interconnect usage (total/H/V)         ; 3.8% / 3.8% / 3.7% ;
+; Maximum fan-out                             ; 11                 ;
+; Highest non-global fan-out                  ; 11                 ;
+; Total fan-out                               ; 232                ;
+; Average fan-out                             ; 2.00               ;
 +---------------------------------------------+--------------------+
 
 
@@ -206,12 +206,12 @@ The pin-out file can be found in C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL
 +-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Location assigned by ; Slow Slew Rate ;
 +-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
-; H     ; 35    ; 1        ; 3            ; 0            ; 0           ; 6                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
-; L     ; 30    ; 1        ; 3            ; 0            ; 3           ; 6                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
-; M     ; 33    ; 1        ; 3            ; 0            ; 2           ; 7                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
+; H     ; 35    ; 1        ; 3            ; 0            ; 0           ; 5                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
+; L     ; 30    ; 1        ; 3            ; 0            ; 3           ; 5                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
+; M     ; 33    ; 1        ; 3            ; 0            ; 2           ; 6                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
 ; T     ; 38    ; 1        ; 4            ; 0            ; 0           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
 ; Ua    ; 36    ; 1        ; 4            ; 0            ; 2           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
-; Us    ; 34    ; 1        ; 3            ; 0            ; 1           ; 6                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
+; Us    ; 34    ; 1        ; 3            ; 0            ; 1           ; 8                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
 ; clock ; 12    ; 1        ; 1            ; 3            ; 3           ; 2                     ; 0                  ; yes    ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ; no             ;
 +-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
 
@@ -223,7 +223,7 @@ The pin-out file can be found in C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL
 +--------------------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
 ; Al                 ; 43    ; 1        ; 6            ; 0            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; Bs                 ; 76    ; 2        ; 7            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; E                  ; 86    ; 2        ; 5            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; User                 ; 10 pF ; -                    ; -                   ;
+; E                  ; 86    ; 2        ; 5            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; Ve                 ; 73    ; 2        ; 8            ; 4            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; Vs                 ; 75    ; 2        ; 7            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; column[0]          ; 78    ; 2        ; 7            ; 5            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
@@ -236,14 +236,14 @@ The pin-out file can be found in C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL
 ; lines[2]           ; 81    ; 2        ; 6            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; lines[3]           ; 87    ; 2        ; 5            ; 5            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; lines[4]           ; 84    ; 2        ; 6            ; 5            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; lines[5]           ; 83    ; 2        ; 6            ; 5            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; User                 ; 10 pF ; -                    ; -                   ;
+; lines[5]           ; 83    ; 2        ; 6            ; 5            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; lines[6]           ; 85    ; 2        ; 5            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; User                 ; 10 pF ; -                    ; -                   ;
-; segA               ; 90    ; 2        ; 4            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; User                 ; 10 pF ; -                    ; -                   ;
+; segA               ; 90    ; 2        ; 4            ; 5            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; segB               ; 70    ; 2        ; 8            ; 4            ; 4           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; segC               ; 41    ; 1        ; 5            ; 0            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; segD               ; 98    ; 2        ; 2            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; segE               ; 100   ; 2        ; 2            ; 5            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
-; segF               ; 92    ; 2        ; 3            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
+; segF               ; 92    ; 2        ; 3            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; User                 ; 10 pF ; -                    ; -                   ;
 ; segG               ; 39    ; 1        ; 5            ; 0            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; seven_seg_digit[0] ; 37    ; 1        ; 4            ; 0            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
 ; seven_seg_digit[1] ; 68    ; 2        ; 8            ; 3            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; User                 ; 10 pF ; -                    ; -                   ;
@@ -392,14 +392,14 @@ Note: User assignments will override these defaults. The user specified values a
 +------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node         ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                     ; Entity Name           ; Library Name ;
 +------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+-----------------------+--------------+
-; |pbl1                              ; 89 (6)      ; 65           ; 0          ; 35   ; 0            ; 24 (6)       ; 2 (0)             ; 63 (0)           ; 0 (0)           ; 3 (0)      ; |pbl1                                                   ; pbl1                  ; work         ;
-;    |pbl2:part2|                    ; 83 (14)     ; 65           ; 0          ; 0    ; 0            ; 18 (14)      ; 2 (0)             ; 63 (0)           ; 0 (0)           ; 3 (3)      ; |pbl1|pbl2:part2                                        ; pbl2                  ; work         ;
+; |pbl1                              ; 81 (6)      ; 61           ; 0          ; 35   ; 0            ; 20 (6)       ; 0 (0)             ; 61 (0)           ; 0 (0)           ; 3 (0)      ; |pbl1                                                   ; pbl1                  ; work         ;
+;    |pbl2:part2|                    ; 75 (4)      ; 61           ; 0          ; 0    ; 0            ; 14 (4)       ; 0 (0)             ; 61 (0)           ; 0 (0)           ; 3 (3)      ; |pbl1|pbl2:part2                                        ; pbl2                  ; work         ;
 ;       |counter_9to0:bcd0|          ; 7 (3)       ; 4            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|counter_9to0:bcd0                      ; counter_9to0          ; work         ;
 ;          |flipflop_D:c0|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|counter_9to0:bcd0|flipflop_D:c0        ; flipflop_D            ; work         ;
 ;          |flipflop_D:c1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|counter_9to0:bcd0|flipflop_D:c1        ; flipflop_D            ; work         ;
 ;          |flipflop_D:c2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|counter_9to0:bcd0|flipflop_D:c2        ; flipflop_D            ; work         ;
 ;          |flipflop_D:c3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|counter_9to0:bcd0|flipflop_D:c3        ; flipflop_D            ; work         ;
-;       |decoder_7seg:enc0|          ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|decoder_7seg:enc0                      ; decoder_7seg          ; work         ;
+;       |decoder_7seg:comb_42|       ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|decoder_7seg:comb_42                   ; decoder_7seg          ; work         ;
 ;       |from_50mhz_to_1hz:d0|       ; 52 (0)      ; 52           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 52 (0)           ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0                   ; from_50mhz_to_1hz     ; work         ;
 ;          |clock_divisor:d0|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0  ; clock_divisor         ; work         ;
 ;          |clock_divisor:d10|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d10 ; clock_divisor         ; work         ;
@@ -428,7 +428,6 @@ Note: User assignments will override these defaults. The user specified values a
 ;          |clock_divisor:d8|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d8  ; clock_divisor         ; work         ;
 ;          |clock_divisor:d9|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d9  ; clock_divisor         ; work         ;
 ;       |led_column_alternator:alt0| ; 5 (5)       ; 5            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (5)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|led_column_alternator:alt0             ; led_column_alternator ; work         ;
-;       |seven_seg_digit_alt:alt1|   ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|seven_seg_digit_alt:alt1               ; seven_seg_digit_alt   ; work         ;
 +------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -443,17 +442,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Ve                 ; Output   ; --            ;
 ; Al                 ; Output   ; --            ;
 ; E                  ; Output   ; --            ;
-; segA               ; Output   ; --            ;
-; segB               ; Output   ; --            ;
-; segC               ; Output   ; --            ;
-; segD               ; Output   ; --            ;
-; segE               ; Output   ; --            ;
-; segF               ; Output   ; --            ;
-; segG               ; Output   ; --            ;
-; seven_seg_digit[0] ; Output   ; --            ;
-; seven_seg_digit[1] ; Output   ; --            ;
-; seven_seg_digit[2] ; Output   ; --            ;
-; seven_seg_digit[3] ; Output   ; --            ;
 ; column[0]          ; Output   ; --            ;
 ; column[1]          ; Output   ; --            ;
 ; column[2]          ; Output   ; --            ;
@@ -466,6 +454,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; lines[4]           ; Output   ; --            ;
 ; lines[5]           ; Output   ; --            ;
 ; lines[6]           ; Output   ; --            ;
+; segA               ; Output   ; --            ;
+; segB               ; Output   ; --            ;
+; segC               ; Output   ; --            ;
+; segD               ; Output   ; --            ;
+; segE               ; Output   ; --            ;
+; segF               ; Output   ; --            ;
+; segG               ; Output   ; --            ;
+; seven_seg_digit[0] ; Output   ; --            ;
+; seven_seg_digit[1] ; Output   ; --            ;
+; seven_seg_digit[2] ; Output   ; --            ;
+; seven_seg_digit[3] ; Output   ; --            ;
 ; Us                 ; Input    ; (1)           ;
 ; H                  ; Input    ; (1)           ;
 ; M                  ; Input    ; (1)           ;
@@ -482,32 +481,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                ; Location    ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ;
 +-----------------------------------------------------+-------------+---------+-------+--------+----------------------+------------------+
 ; clock                                               ; PIN_12      ; 2       ; Clock ; yes    ; Global Clock         ; GCLK0            ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0|Q  ; LC_X2_Y3_N4 ; 3       ; Clock ; yes    ; Global Clock         ; GCLK3            ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d10|Q ; LC_X4_Y3_N9 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d11|Q ; LC_X5_Y3_N3 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d12|Q ; LC_X5_Y3_N9 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d13|Q ; LC_X6_Y3_N3 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14|Q ; LC_X6_Y3_N9 ; 12      ; Clock ; yes    ; Global Clock         ; GCLK1            ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d15|Q ; LC_X3_Y3_N0 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d16|Q ; LC_X3_Y1_N6 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d17|Q ; LC_X3_Y1_N9 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d18|Q ; LC_X4_Y1_N2 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d19|Q ; LC_X4_Y1_N8 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d1|Q  ; LC_X7_Y2_N6 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d20|Q ; LC_X3_Y2_N6 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d21|Q ; LC_X3_Y2_N1 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d22|Q ; LC_X2_Y2_N7 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d23|Q ; LC_X2_Y2_N8 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d24|Q ; LC_X2_Y4_N7 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25|Q ; LC_X2_Y4_N8 ; 5       ; Clock ; yes    ; Global Clock         ; GCLK2            ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d2|Q  ; LC_X7_Y2_N2 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d3|Q  ; LC_X6_Y2_N3 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d4|Q  ; LC_X6_Y2_N8 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d5|Q  ; LC_X5_Y2_N3 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d6|Q  ; LC_X5_Y2_N8 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0|Q  ; LC_X3_Y3_N2 ; 3       ; Clock ; yes    ; Global Clock         ; GCLK3            ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d10|Q ; LC_X3_Y2_N8 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d11|Q ; LC_X2_Y2_N7 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d12|Q ; LC_X2_Y2_N8 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d13|Q ; LC_X2_Y3_N7 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14|Q ; LC_X2_Y3_N8 ; 8       ; Clock ; yes    ; Global Clock         ; GCLK2            ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d15|Q ; LC_X6_Y4_N6 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d16|Q ; LC_X6_Y4_N9 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d17|Q ; LC_X7_Y4_N5 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d18|Q ; LC_X7_Y3_N6 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d19|Q ; LC_X7_Y3_N2 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d1|Q  ; LC_X7_Y1_N4 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d20|Q ; LC_X6_Y3_N3 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d21|Q ; LC_X6_Y3_N8 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d22|Q ; LC_X5_Y3_N3 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d23|Q ; LC_X5_Y3_N9 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d24|Q ; LC_X4_Y3_N3 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25|Q ; LC_X4_Y3_N9 ; 5       ; Clock ; yes    ; Global Clock         ; GCLK1            ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d2|Q  ; LC_X6_Y1_N3 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d3|Q  ; LC_X6_Y1_N1 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d4|Q  ; LC_X5_Y1_N5 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d5|Q  ; LC_X5_Y1_N3 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d6|Q  ; LC_X5_Y2_N4 ; 3       ; Clock ; no     ; --                   ; --               ;
 ; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d7|Q  ; LC_X4_Y2_N3 ; 3       ; Clock ; no     ; --                   ; --               ;
 ; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d8|Q  ; LC_X4_Y2_N8 ; 3       ; Clock ; no     ; --                   ; --               ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d9|Q  ; LC_X4_Y3_N6 ; 3       ; Clock ; no     ; --                   ; --               ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d9|Q  ; LC_X3_Y2_N3 ; 3       ; Clock ; no     ; --                   ; --               ;
 +-----------------------------------------------------+-------------+---------+-------+--------+----------------------+------------------+
 
 
@@ -517,9 +516,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                ; Location    ; Fan-Out ; Global Resource Used ; Global Line Name ;
 +-----------------------------------------------------+-------------+---------+----------------------+------------------+
 ; clock                                               ; PIN_12      ; 2       ; Global Clock         ; GCLK0            ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0|Q  ; LC_X2_Y3_N4 ; 3       ; Global Clock         ; GCLK3            ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14|Q ; LC_X6_Y3_N9 ; 12      ; Global Clock         ; GCLK1            ;
-; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25|Q ; LC_X2_Y4_N8 ; 5       ; Global Clock         ; GCLK2            ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0|Q  ; LC_X3_Y3_N2 ; 3       ; Global Clock         ; GCLK3            ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14|Q ; LC_X2_Y3_N8 ; 8       ; Global Clock         ; GCLK2            ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25|Q ; LC_X4_Y3_N9 ; 5       ; Global Clock         ; GCLK1            ;
 +-----------------------------------------------------+-------------+---------+----------------------+------------------+
 
 
@@ -528,12 +527,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------+
 ; Routing Resource Type ; Usage            ;
 +-----------------------+------------------+
-; C4s                   ; 33 / 784 ( 4 % ) ;
-; Direct links          ; 15 / 888 ( 2 % ) ;
+; C4s                   ; 31 / 784 ( 4 % ) ;
+; Direct links          ; 19 / 888 ( 2 % ) ;
 ; Global clocks         ; 4 / 4 ( 100 % )  ;
-; LAB clocks            ; 6 / 32 ( 19 % )  ;
-; LUT chains            ; 5 / 216 ( 2 % )  ;
-; Local interconnects   ; 66 / 888 ( 7 % ) ;
+; LAB clocks            ; 5 / 32 ( 16 % )  ;
+; LUT chains            ; 3 / 216 ( 1 % )  ;
+; Local interconnects   ; 67 / 888 ( 8 % ) ;
 ; R4s                   ; 26 / 704 ( 4 % ) ;
 +-----------------------+------------------+
 
@@ -541,16 +540,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +--------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 4.68) ; Number of LABs  (Total = 19) ;
+; Number of Logic Elements  (Average = 4.26) ; Number of LABs  (Total = 19) ;
 +--------------------------------------------+------------------------------+
-; 1                                          ; 0                            ;
-; 2                                          ; 2                            ;
+; 1                                          ; 1                            ;
+; 2                                          ; 4                            ;
 ; 3                                          ; 0                            ;
-; 4                                          ; 13                           ;
+; 4                                          ; 10                           ;
 ; 5                                          ; 1                            ;
 ; 6                                          ; 0                            ;
-; 7                                          ; 0                            ;
-; 8                                          ; 1                            ;
+; 7                                          ; 1                            ;
+; 8                                          ; 0                            ;
 ; 9                                          ; 0                            ;
 ; 10                                         ; 2                            ;
 +--------------------------------------------+------------------------------+
@@ -568,17 +567,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 4.84) ; Number of LABs  (Total = 19) ;
+; Number of Signals Sourced  (Average = 4.42) ; Number of LABs  (Total = 19) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
-; 1                                           ; 0                            ;
-; 2                                           ; 2                            ;
+; 1                                           ; 1                            ;
+; 2                                           ; 4                            ;
 ; 3                                           ; 0                            ;
-; 4                                           ; 13                           ;
+; 4                                           ; 10                           ;
 ; 5                                           ; 1                            ;
 ; 6                                           ; 0                            ;
-; 7                                           ; 0                            ;
-; 8                                           ; 1                            ;
+; 7                                           ; 1                            ;
+; 8                                           ; 0                            ;
 ; 9                                           ; 0                            ;
 ; 10                                          ; 1                            ;
 ; 11                                          ; 0                            ;
@@ -590,34 +589,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 2.37) ; Number of LABs  (Total = 19) ;
+; Number of Signals Sourced Out  (Average = 2.11) ; Number of LABs  (Total = 19) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 13                           ;
+; 1                                               ; 15                           ;
 ; 2                                               ; 1                            ;
 ; 3                                               ; 0                            ;
-; 4                                               ; 2                            ;
-; 5                                               ; 1                            ;
+; 4                                               ; 0                            ;
+; 5                                               ; 0                            ;
 ; 6                                               ; 0                            ;
-; 7                                               ; 1                            ;
+; 7                                               ; 2                            ;
 ; 8                                               ; 0                            ;
-; 9                                               ; 0                            ;
-; 10                                              ; 1                            ;
+; 9                                               ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 2.05) ; Number of LABs  (Total = 19) ;
+; Number of Distinct Inputs  (Average = 1.79) ; Number of LABs  (Total = 19) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
 ; 1                                           ; 14                           ;
 ; 2                                           ; 0                            ;
-; 3                                           ; 0                            ;
-; 4                                           ; 2                            ;
+; 3                                           ; 1                            ;
+; 4                                           ; 3                            ;
 ; 5                                           ; 1                            ;
-; 6                                           ; 2                            ;
 +---------------------------------------------+------------------------------+
 
 
@@ -686,7 +683,7 @@ Info (332111): Found 27 clocks
     Info (332111):    1.000 pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d24|Q
     Info (332111):    1.000 pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25|Q
 Info (186079): Completed User Assigned Global Signals Promotion Operation
-Info (186215): Automatically promoted signal "clock" to use Global clock in PIN 12 File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl1.v Line: 2
+Info (186215): Automatically promoted signal "clock" to use Global clock in PIN 12 File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl1.v Line: 3
 Info (186216): Automatically promoted some destinations of signal "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14|Q" to use Global clock File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/clock_divisor.v Line: 7
     Info (186217): Destination "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14|w2" may be non-global or may not use global clock File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/clock_divisor.v Line: 6
 Info (186216): Automatically promoted some destinations of signal "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25|Q" to use Global clock File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/clock_divisor.v Line: 7
@@ -713,15 +710,15 @@ Info (170195): Router estimated average interconnect usage is 3% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.47 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.45 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/output_files/pbl2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5710 megabytes
-    Info: Processing ended: Tue Jul 16 21:47:56 2024
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 5714 megabytes
+    Info: Processing ended: Tue Jul 16 22:29:43 2024
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:02
 
 
