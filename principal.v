@@ -1,5 +1,5 @@
 module principal (
-  input H, M, L, Ua, Us, T, Ag, Clock, Reset
+  input H, M, L, Ua, Us, T, Ag, Clock,
   output Ve, Bs, Bs_Ag, Vs, Al, E, S_Enchendo, S_Cheio, S_Aspersao, S_Agro, S_Gotejamento, S_Limpeza, S_SaidaLimpeza, S_Erro
 );
 
@@ -29,7 +29,10 @@ module principal (
   // INSTÂNCIA DO MÓDULO "MAQUINA":
   maquina maquina_de_estados (
     .Clock(Clock), 
-    .Reset(Reset), 
+    .Reset(), 
+    .H(H),
+    .M(M),
+    .L(L),
     .Ve(Ve), 
     .Bs(Bs),
     .Bs_Ag(Bs_Ag),
