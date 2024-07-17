@@ -1,0 +1,748 @@
+Analysis & Synthesis report for pbl2
+Tue Jul 16 21:33:51 2024
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25"
+ 12. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d24"
+ 13. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d23"
+ 14. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d22"
+ 15. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d21"
+ 16. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d20"
+ 17. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d19"
+ 18. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d18"
+ 19. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d17"
+ 20. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d16"
+ 21. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d15"
+ 22. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14"
+ 23. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d13"
+ 24. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d12"
+ 25. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d11"
+ 26. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d10"
+ 27. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d9"
+ 28. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d8"
+ 29. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d7"
+ 30. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d6"
+ 31. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d5"
+ 32. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d4"
+ 33. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d3"
+ 34. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d2"
+ 35. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d1"
+ 36. Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0"
+ 37. Port Connectivity Checks: "pbl2:part2"
+ 38. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Tue Jul 16 21:33:51 2024       ;
+; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name               ; pbl2                                        ;
+; Top-level Entity Name       ; pbl1                                        ;
+; Family                      ; MAX II                                      ;
+; Total logic elements        ; 90                                          ;
+; Total pins                  ; 35                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM240T100C5       ;                    ;
+; Top-level entity name                                            ; pbl1               ; pbl2               ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+; pbl2.v                           ; yes             ; User Verilog HDL File        ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v                  ;         ;
+; clock_divisor.v                  ; yes             ; User Verilog HDL File        ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/clock_divisor.v         ;         ;
+; from_50mhz_to_1hz.v              ; yes             ; User Verilog HDL File        ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/from_50mhz_to_1hz.v     ;         ;
+; led_column_alternator.v          ; yes             ; User Verilog HDL File        ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/led_column_alternator.v ;         ;
+; pbl1.v                           ; yes             ; User Verilog HDL File        ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl1.v                  ;         ;
+; flipflop_D.v                     ; yes             ; User Verilog HDL File        ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/flipflop_D.v            ;         ;
+; seven_seg_digit_alt.v            ; yes             ; User Verilog HDL File        ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/seven_seg_digit_alt.v   ;         ;
+; counter_9to0.v                   ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/counter_9to0.v          ;         ;
+; decoder_7seg.v                   ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/decoder_7seg.v          ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                       ;
++---------------------------------------------+-----------------------------------------------------+
+; Resource                                    ; Usage                                               ;
++---------------------------------------------+-----------------------------------------------------+
+; Total logic elements                        ; 90                                                  ;
+;     -- Combinational with no register       ; 25                                                  ;
+;     -- Register only                        ; 5                                                   ;
+;     -- Combinational with a register        ; 60                                                  ;
+;                                             ;                                                     ;
+; Logic element usage by number of LUT inputs ;                                                     ;
+;     -- 4 input functions                    ; 18                                                  ;
+;     -- 3 input functions                    ; 6                                                   ;
+;     -- 2 input functions                    ; 5                                                   ;
+;     -- 1 input functions                    ; 56                                                  ;
+;     -- 0 input functions                    ; 0                                                   ;
+;                                             ;                                                     ;
+; Logic elements by mode                      ;                                                     ;
+;     -- normal mode                          ; 90                                                  ;
+;     -- arithmetic mode                      ; 0                                                   ;
+;     -- qfbk mode                            ; 0                                                   ;
+;     -- register cascade mode                ; 0                                                   ;
+;     -- synchronous clear/load mode          ; 0                                                   ;
+;     -- asynchronous clear/load mode         ; 0                                                   ;
+;                                             ;                                                     ;
+; Total registers                             ; 65                                                  ;
+; I/O pins                                    ; 35                                                  ;
+; Maximum fan-out node                        ; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14|Q ;
+; Maximum fan-out                             ; 12                                                  ;
+; Total fan-out                               ; 253                                                 ;
+; Average fan-out                             ; 2.02                                                ;
++---------------------------------------------+-----------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                      ;
++------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node         ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                     ; Entity Name           ; Library Name ;
++------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+-----------------------+--------------+
+; |pbl1                              ; 90 (5)      ; 65           ; 0          ; 35   ; 0            ; 25 (5)       ; 5 (0)             ; 60 (0)           ; 0 (0)           ; 0 (0)      ; |pbl1                                                   ; pbl1                  ; work         ;
+;    |pbl2:part2|                    ; 85 (16)     ; 65           ; 0          ; 0    ; 0            ; 20 (16)      ; 5 (0)             ; 60 (0)           ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2                                        ; pbl2                  ; work         ;
+;       |counter_9to0:bcd0|          ; 7 (3)       ; 4            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|counter_9to0:bcd0                      ; counter_9to0          ; work         ;
+;          |flipflop_D:c0|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|counter_9to0:bcd0|flipflop_D:c0        ; flipflop_D            ; work         ;
+;          |flipflop_D:c1|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|counter_9to0:bcd0|flipflop_D:c1        ; flipflop_D            ; work         ;
+;          |flipflop_D:c2|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|counter_9to0:bcd0|flipflop_D:c2        ; flipflop_D            ; work         ;
+;          |flipflop_D:c3|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|counter_9to0:bcd0|flipflop_D:c3        ; flipflop_D            ; work         ;
+;       |decoder_7seg:enc0|          ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|decoder_7seg:enc0                      ; decoder_7seg          ; work         ;
+;       |from_50mhz_to_1hz:d0|       ; 52 (0)      ; 52           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 52 (0)           ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0                   ; from_50mhz_to_1hz     ; work         ;
+;          |clock_divisor:d0|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0  ; clock_divisor         ; work         ;
+;          |clock_divisor:d10|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d10 ; clock_divisor         ; work         ;
+;          |clock_divisor:d11|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d11 ; clock_divisor         ; work         ;
+;          |clock_divisor:d12|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d12 ; clock_divisor         ; work         ;
+;          |clock_divisor:d13|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d13 ; clock_divisor         ; work         ;
+;          |clock_divisor:d14|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14 ; clock_divisor         ; work         ;
+;          |clock_divisor:d15|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d15 ; clock_divisor         ; work         ;
+;          |clock_divisor:d16|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d16 ; clock_divisor         ; work         ;
+;          |clock_divisor:d17|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d17 ; clock_divisor         ; work         ;
+;          |clock_divisor:d18|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d18 ; clock_divisor         ; work         ;
+;          |clock_divisor:d19|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d19 ; clock_divisor         ; work         ;
+;          |clock_divisor:d1|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d1  ; clock_divisor         ; work         ;
+;          |clock_divisor:d20|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d20 ; clock_divisor         ; work         ;
+;          |clock_divisor:d21|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d21 ; clock_divisor         ; work         ;
+;          |clock_divisor:d22|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d22 ; clock_divisor         ; work         ;
+;          |clock_divisor:d23|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d23 ; clock_divisor         ; work         ;
+;          |clock_divisor:d24|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d24 ; clock_divisor         ; work         ;
+;          |clock_divisor:d25|       ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25 ; clock_divisor         ; work         ;
+;          |clock_divisor:d2|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d2  ; clock_divisor         ; work         ;
+;          |clock_divisor:d3|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d3  ; clock_divisor         ; work         ;
+;          |clock_divisor:d4|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d4  ; clock_divisor         ; work         ;
+;          |clock_divisor:d5|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d5  ; clock_divisor         ; work         ;
+;          |clock_divisor:d6|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d6  ; clock_divisor         ; work         ;
+;          |clock_divisor:d7|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d7  ; clock_divisor         ; work         ;
+;          |clock_divisor:d8|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d8  ; clock_divisor         ; work         ;
+;          |clock_divisor:d9|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d9  ; clock_divisor         ; work         ;
+;       |led_column_alternator:alt0| ; 5 (5)       ; 5            ; 0          ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|led_column_alternator:alt0             ; led_column_alternator ; work         ;
+;       |seven_seg_digit_alt:alt1|   ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |pbl1|pbl2:part2|seven_seg_digit_alt:alt1               ; seven_seg_digit_alt   ; work         ;
++------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+-----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                            ;
++------------------------------------------------------+----------------------------------------+
+; Register name                                        ; Reason for Removal                     ;
++------------------------------------------------------+----------------------------------------+
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25|w1 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25|w0 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d24|w1 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d24|w0 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d23|w1 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d23|w0 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d22|w1 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d22|w0 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d21|w1 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d21|w0 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d20|w1 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d20|w0 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d19|w1 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d19|w0 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d18|w1 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d18|w0 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d17|w1 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d17|w0 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d16|w1 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d16|w0 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d15|w1 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d15|w0 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14|w1 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14|w0 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d13|w1 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d13|w0 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d12|w1 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d12|w0 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d11|w1 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d11|w0 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d10|w1 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d10|w0 ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d9|w1  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d9|w0  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d8|w1  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d8|w0  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d7|w1  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d7|w0  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d6|w1  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d6|w0  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d5|w1  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d5|w0  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d4|w1  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d4|w0  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d3|w1  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d3|w0  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d2|w1  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d2|w0  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d1|w1  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d1|w0  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0|w1  ; Stuck at VCC due to stuck port data_in ;
+; pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0|w0  ; Stuck at VCC due to stuck port data_in ;
+; Total Number of Removed Registers = 52               ;                                        ;
++------------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 65    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------+
+; Inverted Register Statistics                              ;
++-------------------------------------------------+---------+
+; Inverted Register                               ; Fan out ;
++-------------------------------------------------+---------+
+; pbl2:part2|seven_seg_digit_alt:alt1|digit[1]    ; 2       ;
+; pbl2:part2|seven_seg_digit_alt:alt1|digit[2]    ; 2       ;
+; pbl2:part2|seven_seg_digit_alt:alt1|digit[3]    ; 2       ;
+; pbl2:part2|led_column_alternator:alt0|column[0] ; 4       ;
+; Total number of inverted registers = 4          ;         ;
++-------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25"                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d24"                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d23"                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d22"                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d21"                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d20"                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d19"                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d18"                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d17"                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d16"                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d15"                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14"                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d13"                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d12"                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d11"                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d10"                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d9"                                                                                           ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d8"                                                                                           ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d7"                                                                                           ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d6"                                                                                           ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d5"                                                                                           ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d4"                                                                                           ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d3"                                                                                           ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d2"                                                                                           ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d1"                                                                                           ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0"                                                                                           ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pbl2:part2"                                                                                                          ;
++------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                                                  ;
++------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; one_second_clock ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; led_matriz_clock ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; bcd              ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; bcd_10s          ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; bcd_1m           ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; bcd_10m          ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Tue Jul 16 21:33:34 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pbl2 -c pbl2
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Warning (12019): Can't analyze file -- file encoder_bcd_7seg_until_5.v is missing
+Warning (12019): Can't analyze file -- file encoder_bcd_7seg_until_2.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file encoder_bcd_7seg_until_9.v
+    Info (12023): Found entity 1: encoder_bcd_7seg_until_9 File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/encoder_bcd_7seg_until_9.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bcd_counter_1s.v
+    Info (12023): Found entity 1: bcd_counter_1s File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/bcd_counter_1s.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pbl2.v
+    Info (12023): Found entity 1: pbl2 File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clock_divisor.v
+    Info (12023): Found entity 1: clock_divisor File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/clock_divisor.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file from_50mhz_to_1hz.v
+    Info (12023): Found entity 1: from_50mhz_to_1hz File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/from_50mhz_to_1hz.v Line: 1
+Warning (12019): Can't analyze file -- file bcd_comparator.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file led_column_alternator.v
+    Info (12023): Found entity 1: led_column_alternator File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/led_column_alternator.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pbl1.v
+    Info (12023): Found entity 1: pbl1 File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flipflop_d.v
+    Info (12023): Found entity 1: flipflop_D File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/flipflop_D.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bcd_counter_10s.v
+    Info (12023): Found entity 1: bcd_counter_10s File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/bcd_counter_10s.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bcd_counter_1m.v
+    Info (12023): Found entity 1: bcd_counter_1m File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/bcd_counter_1m.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bcd_counter_10m.v
+    Info (12023): Found entity 1: bcd_counter_10m File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/bcd_counter_10m.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file seven_seg_digit_alt.v
+    Info (12023): Found entity 1: seven_seg_digit_alt File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/seven_seg_digit_alt.v Line: 1
+Info (12127): Elaborating entity "pbl1" for the top level hierarchy
+Info (12128): Elaborating entity "pbl2" for hierarchy "pbl2:part2" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl1.v Line: 44
+Warning (10858): Verilog HDL warning at pbl2.v(59): object A_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
+Warning (10858): Verilog HDL warning at pbl2.v(59): object B_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
+Warning (10858): Verilog HDL warning at pbl2.v(59): object C_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
+Warning (10858): Verilog HDL warning at pbl2.v(59): object D_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
+Warning (10858): Verilog HDL warning at pbl2.v(59): object E_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
+Warning (10858): Verilog HDL warning at pbl2.v(59): object F_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
+Warning (10858): Verilog HDL warning at pbl2.v(59): object G_10s used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
+Warning (10858): Verilog HDL warning at pbl2.v(60): object A_1m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
+Warning (10858): Verilog HDL warning at pbl2.v(60): object B_1m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
+Warning (10858): Verilog HDL warning at pbl2.v(60): object C_1m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
+Warning (10858): Verilog HDL warning at pbl2.v(60): object D_1m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
+Warning (10858): Verilog HDL warning at pbl2.v(60): object E_1m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
+Warning (10858): Verilog HDL warning at pbl2.v(60): object F_1m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
+Warning (10858): Verilog HDL warning at pbl2.v(60): object G_1m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
+Warning (10858): Verilog HDL warning at pbl2.v(61): object A_10m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
+Warning (10858): Verilog HDL warning at pbl2.v(61): object B_10m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
+Warning (10858): Verilog HDL warning at pbl2.v(61): object C_10m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
+Warning (10858): Verilog HDL warning at pbl2.v(61): object D_10m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
+Warning (10858): Verilog HDL warning at pbl2.v(61): object E_10m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
+Warning (10858): Verilog HDL warning at pbl2.v(61): object F_10m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
+Warning (10858): Verilog HDL warning at pbl2.v(61): object G_10m used but never assigned File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
+Warning (10036): Verilog HDL or VHDL warning at pbl2.v(88): object "twenty_five_minutes" assigned a value but never read File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 88
+Warning (10036): Verilog HDL or VHDL warning at pbl2.v(88): object "twenty_minutes" assigned a value but never read File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 88
+Warning (10036): Verilog HDL or VHDL warning at pbl2.v(88): object "fifteen_minutes" assigned a value but never read File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 88
+Warning (10036): Verilog HDL or VHDL warning at pbl2.v(88): object "ten_minutes" assigned a value but never read File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 88
+Warning (10036): Verilog HDL or VHDL warning at pbl2.v(88): object "zero_minutes" assigned a value but never read File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 88
+Warning (10030): Net "A_10s" at pbl2.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
+Warning (10030): Net "B_10s" at pbl2.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
+Warning (10030): Net "C_10s" at pbl2.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
+Warning (10030): Net "D_10s" at pbl2.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
+Warning (10030): Net "E_10s" at pbl2.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
+Warning (10030): Net "F_10s" at pbl2.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
+Warning (10030): Net "G_10s" at pbl2.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 59
+Warning (10030): Net "A_1m" at pbl2.v(60) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
+Warning (10030): Net "B_1m" at pbl2.v(60) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
+Warning (10030): Net "C_1m" at pbl2.v(60) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
+Warning (10030): Net "D_1m" at pbl2.v(60) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
+Warning (10030): Net "E_1m" at pbl2.v(60) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
+Warning (10030): Net "F_1m" at pbl2.v(60) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
+Warning (10030): Net "G_1m" at pbl2.v(60) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 60
+Warning (10030): Net "A_10m" at pbl2.v(61) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
+Warning (10030): Net "B_10m" at pbl2.v(61) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
+Warning (10030): Net "C_10m" at pbl2.v(61) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
+Warning (10030): Net "D_10m" at pbl2.v(61) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
+Warning (10030): Net "E_10m" at pbl2.v(61) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
+Warning (10030): Net "F_10m" at pbl2.v(61) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
+Warning (10030): Net "G_10m" at pbl2.v(61) has no driver or initial value, using a default initial value '0' File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 61
+Warning (10034): Output port "bcd_10s" at pbl2.v(15) has no driver File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 15
+Warning (10034): Output port "bcd_1m" at pbl2.v(15) has no driver File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 15
+Warning (10034): Output port "bcd_10m" at pbl2.v(15) has no driver File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 15
+Info (12128): Elaborating entity "from_50mhz_to_1hz" for hierarchy "pbl2:part2|from_50mhz_to_1hz:d0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 18
+Info (12128): Elaborating entity "clock_divisor" for hierarchy "pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/from_50mhz_to_1hz.v Line: 11
+Info (12128): Elaborating entity "led_column_alternator" for hierarchy "pbl2:part2|led_column_alternator:alt0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 21
+Warning (12125): Using design file counter_9to0.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: counter_9to0 File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/counter_9to0.v Line: 1
+Info (12128): Elaborating entity "counter_9to0" for hierarchy "pbl2:part2|counter_9to0:bcd0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 50
+Info (12128): Elaborating entity "flipflop_D" for hierarchy "pbl2:part2|counter_9to0:bcd0|flipflop_D:c0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/counter_9to0.v Line: 14
+Info (12128): Elaborating entity "seven_seg_digit_alt" for hierarchy "pbl2:part2|seven_seg_digit_alt:alt1" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 54
+Warning (12125): Using design file decoder_7seg.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: decoder_7seg File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/decoder_7seg.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at decoder_7seg.v(6): created implicit net for "a" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/decoder_7seg.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at decoder_7seg.v(7): created implicit net for "b" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/decoder_7seg.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at decoder_7seg.v(8): created implicit net for "c" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/decoder_7seg.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at decoder_7seg.v(9): created implicit net for "d" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/decoder_7seg.v Line: 9
+Info (12128): Elaborating entity "decoder_7seg" for hierarchy "pbl2:part2|decoder_7seg:enc0" File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl2.v Line: 65
+Warning (12241): 27 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "lines[3]" is stuck at VCC File: C:/Users/gabri/OneDrive/햞ea de Trabalho/CD-PBL3/CD-PBL3/pbl1.v Line: 7
+Info (21057): Implemented 125 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 28 output pins
+    Info (21061): Implemented 90 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 63 warnings
+    Info: Peak virtual memory: 4706 megabytes
+    Info: Processing ended: Tue Jul 16 21:33:51 2024
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:16
+
+

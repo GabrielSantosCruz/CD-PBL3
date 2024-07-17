@@ -1,0 +1,329 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25|Q'
+Slack : -2.470
+TNS   : -8.824
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14|Q'
+Slack : -1.229
+TNS   : -10.845
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d23|Q'
+Slack : -1.220
+TNS   : -1.220
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d19|Q'
+Slack : -1.219
+TNS   : -1.219
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d8|Q'
+Slack : -1.219
+TNS   : -1.219
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d15|Q'
+Slack : -1.217
+TNS   : -1.217
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d20|Q'
+Slack : -1.217
+TNS   : -1.217
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d24|Q'
+Slack : -1.217
+TNS   : -1.217
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d9|Q'
+Slack : -1.217
+TNS   : -1.217
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d18|Q'
+Slack : -1.215
+TNS   : -1.215
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0|Q'
+Slack : -1.214
+TNS   : -1.214
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d1|Q'
+Slack : -1.213
+TNS   : -1.213
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d13|Q'
+Slack : -1.209
+TNS   : -1.209
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d5|Q'
+Slack : -1.208
+TNS   : -1.208
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d11|Q'
+Slack : -1.207
+TNS   : -1.207
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d4|Q'
+Slack : -1.207
+TNS   : -1.207
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d12|Q'
+Slack : -1.205
+TNS   : -1.205
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d17|Q'
+Slack : -1.204
+TNS   : -1.204
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d2|Q'
+Slack : -1.204
+TNS   : -1.204
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d3|Q'
+Slack : -1.204
+TNS   : -1.204
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d6|Q'
+Slack : -1.204
+TNS   : -1.204
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d7|Q'
+Slack : -1.204
+TNS   : -1.204
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d10|Q'
+Slack : -1.200
+TNS   : -1.200
+
+Type  : Setup 'clock'
+Slack : -1.196
+TNS   : -1.196
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d22|Q'
+Slack : -1.196
+TNS   : -1.196
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d16|Q'
+Slack : -1.194
+TNS   : -1.194
+
+Type  : Setup 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d21|Q'
+Slack : -1.194
+TNS   : -1.194
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0|Q'
+Slack : -2.649
+TNS   : -2.649
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14|Q'
+Slack : -2.102
+TNS   : -2.102
+
+Type  : Hold 'clock'
+Slack : -1.824
+TNS   : -1.824
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d12|Q'
+Slack : -1.418
+TNS   : -1.418
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d19|Q'
+Slack : -1.398
+TNS   : -1.398
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d23|Q'
+Slack : -1.235
+TNS   : -1.235
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d8|Q'
+Slack : -1.232
+TNS   : -1.232
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d16|Q'
+Slack : -0.893
+TNS   : -0.893
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d2|Q'
+Slack : -0.870
+TNS   : -0.870
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d6|Q'
+Slack : -0.867
+TNS   : -0.867
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d4|Q'
+Slack : -0.864
+TNS   : -0.864
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d17|Q'
+Slack : -0.863
+TNS   : -0.863
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d21|Q'
+Slack : -0.616
+TNS   : -0.616
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d10|Q'
+Slack : -0.611
+TNS   : -0.611
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d18|Q'
+Slack : -0.519
+TNS   : -0.519
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d13|Q'
+Slack : -0.518
+TNS   : -0.518
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d11|Q'
+Slack : -0.509
+TNS   : -0.509
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d3|Q'
+Slack : -0.509
+TNS   : -0.509
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d7|Q'
+Slack : -0.509
+TNS   : -0.509
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d5|Q'
+Slack : -0.505
+TNS   : -0.505
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d1|Q'
+Slack : -0.504
+TNS   : -0.504
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d24|Q'
+Slack : -0.499
+TNS   : -0.499
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d15|Q'
+Slack : -0.498
+TNS   : -0.498
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d20|Q'
+Slack : -0.498
+TNS   : -0.498
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d9|Q'
+Slack : -0.498
+TNS   : -0.498
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d22|Q'
+Slack : -0.260
+TNS   : -0.260
+
+Type  : Hold 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25|Q'
+Slack : 1.937
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d0|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d10|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d11|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d12|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d13|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d14|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d15|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d16|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d17|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d18|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d19|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d1|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d20|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d21|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d22|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d23|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d24|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d25|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d2|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d3|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d4|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d5|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d6|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d7|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d8|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pbl2:part2|from_50mhz_to_1hz:d0|clock_divisor:d9|Q'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------
