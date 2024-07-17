@@ -8,11 +8,6 @@ module maquina (
   parameter E_Enchendo = 0, E_Cheio = 1, E_Aspersao = 2, E_Gotejamento = 3, E_Limpeza = 4, E_Erro = 5;
 
   always @ (posedge Clock or posedge Reset) begin
-    if (Reset) begin
-      Estado <= E_Enchendo;
-    end
-
-    else begin
       case (Estado)
         
         // TRANSIÇÕES DO ESTADO "ENCHENDO":
@@ -96,13 +91,13 @@ module maquina (
           Estado <= E_Enchendo;
       
       encase
-    
-    end
   
   end
 
   // SAÍDAS DA MÁQUINA DE ESTADOS:
   always @ (posedge Clock) begin
+
+    // DEFININDO O VALOR INICIAL DAS SAÍDAS DA MÁQUINA DE ESTADOS:
     S_Enchendo = 1'b0; 
     S_Cheio = 1'b0;
     S_Aspersao = 1'b0;
