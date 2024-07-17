@@ -90,8 +90,11 @@ set_location_assignment PIN_88 -to seven_seg_digit[3]
 set_location_assignment PIN_66 -to seven_seg_digit[2]
 set_location_assignment PIN_68 -to seven_seg_digit[1]
 set_location_assignment PIN_37 -to seven_seg_digit[0]
+<<<<<<< Updated upstream
 set_global_assignment -name VERILOG_FILE counter_9to0.v
 set_global_assignment -name VERILOG_FILE decoder_7seg.v
+=======
+>>>>>>> Stashed changes
 set_global_assignment -name VERILOG_FILE bcd_counter_1s.v
 set_global_assignment -name VERILOG_FILE pbl2.v
 set_global_assignment -name VERILOG_FILE clock_divisor.v
