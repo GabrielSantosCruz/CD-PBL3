@@ -1,5 +1,5 @@
 module maquina (
-  input Clock, Reset, Ve, Bs, Vs, E, Ag,
+  input Clock, Reset, Ve, Bs, Bs_Ag, Vs, E,
   output S_Enchendo, S_Cheio, S_Aspersao, S_Agro, S_Gotejamento, S_Limpeza, S_SaidaLimpeza, S_Erro
 );
 
@@ -100,7 +100,7 @@ module maquina (
             S_Aspersao = 1'b1;
           end
         
-        else if (Ag)
+        else if (Bs_Ag)
           begin
             S_Aspersao = 1'b1;
             S_Agro = 1'b1;
