@@ -1,0 +1,341 @@
+Analysis & Synthesis report for pbl2
+Wed Jul 17 14:23:00 2024
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |mef|Estado
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |mef
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Wed Jul 17 14:23:00 2024       ;
+; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name               ; pbl2                                        ;
+; Top-level Entity Name       ; mef                                         ;
+; Family                      ; MAX II                                      ;
+; Total logic elements        ; 4                                           ;
+; Total pins                  ; 15                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM240T100C5       ;                    ;
+; Top-level entity name                                            ; mef                ; pbl2               ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                          ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                            ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
+; mef.v                            ; yes             ; User Verilog HDL File  ; /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Total logic elements                        ; 4              ;
+;     -- Combinational with no register       ; 1              ;
+;     -- Register only                        ; 1              ;
+;     -- Combinational with a register        ; 2              ;
+;                                             ;                ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 1              ;
+;     -- 3 input functions                    ; 1              ;
+;     -- 2 input functions                    ; 0              ;
+;     -- 1 input functions                    ; 1              ;
+;     -- 0 input functions                    ; 0              ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 4              ;
+;     -- arithmetic mode                      ; 0              ;
+;     -- qfbk mode                            ; 0              ;
+;     -- register cascade mode                ; 0              ;
+;     -- synchronous clear/load mode          ; 0              ;
+;     -- asynchronous clear/load mode         ; 1              ;
+;                                             ;                ;
+; Total registers                             ; 3              ;
+; I/O pins                                    ; 15             ;
+; Maximum fan-out node                        ; Estado.E_Cheio ;
+; Maximum fan-out                             ; 3              ;
+; Total fan-out                               ; 15             ;
+; Average fan-out                             ; 0.79           ;
++---------------------------------------------+----------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; |mef                       ; 4 (4)       ; 3            ; 0          ; 15   ; 0            ; 1 (1)        ; 1 (1)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |mef                ; mef         ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------+
+; State Machine - |mef|Estado        ;
++-------------------+----------------+
+; Name              ; Estado.E_Cheio ;
++-------------------+----------------+
+; Estado.E_Enchendo ; 0              ;
+; Estado.E_Cheio    ; 1              ;
++-------------------+----------------+
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; Gotejamento~reg0                      ; Stuck at GND due to stuck port data_in ;
+; Aspersao~reg0                         ; Stuck at GND due to stuck port data_in ;
+; Limpando~reg0                         ; Stuck at GND due to stuck port data_in ;
+; Erro~reg0                             ; Stuck at GND due to stuck port data_in ;
+; Estado~7                              ; Lost fanout                            ;
+; Estado~8                              ; Lost fanout                            ;
+; Total Number of Removed Registers = 6 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 3     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 1     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |mef|Selector0             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |mef ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; E_Enchendo     ; 0     ; Unsigned Binary                            ;
+; E_Cheio        ; 1     ; Unsigned Binary                            ;
+; E_Gotejamento  ; 0     ; Unsigned Binary                            ;
+; E_Aspersao     ; 1     ; Unsigned Binary                            ;
+; E_Limpando     ; 0     ; Unsigned Binary                            ;
+; E_Erro         ; 1     ; Unsigned Binary                            ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Wed Jul 17 14:22:54 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pbl2 -c pbl2
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file principal.v
+    Info (12023): Found entity 1: principal File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/principal.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file maquina.v
+    Info (12023): Found entity 1: maquina File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/maquina.v Line: 1
+Warning (10229): Verilog HDL Expression warning at mef.v(10): truncated literal to match 1 bits File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file mef.v
+    Info (12023): Found entity 1: mef File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file combinacional.v
+    Info (12023): Found entity 1: combinacional File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/combinacional.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file encoder_bcd_7seg_until_5.v
+    Info (12023): Found entity 1: encoder_bcd_7seg_until_5 File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/encoder_bcd_7seg_until_5.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file encoder_bcd_7seg_until_2.v
+    Info (12023): Found entity 1: encoder_bcd_7seg_until_2 File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/encoder_bcd_7seg_until_2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file encoder_bcd_7seg_until_9.v
+    Info (12023): Found entity 1: encoder_bcd_7seg_until_9 File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/encoder_bcd_7seg_until_9.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bcd_counter_1s.v
+    Info (12023): Found entity 1: bcd_counter_1s File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/bcd_counter_1s.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pbl2.v
+    Info (12023): Found entity 1: pbl2 File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/pbl2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clock_divisor.v
+    Info (12023): Found entity 1: clock_divisor File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/clock_divisor.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file from_50mhz_to_1hz.v
+    Info (12023): Found entity 1: from_50mhz_to_1hz File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/from_50mhz_to_1hz.v Line: 1
+Warning (12019): Can't analyze file -- file bcd_comparator.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file led_column_alternator.v
+    Info (12023): Found entity 1: led_column_alternator File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/led_column_alternator.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pbl1.v
+    Info (12023): Found entity 1: pbl1 File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/pbl1.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file flipflop_D.v
+    Info (12023): Found entity 1: flipflop_D File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/flipflop_D.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bcd_counter_10s.v
+    Info (12023): Found entity 1: bcd_counter_10s File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/bcd_counter_10s.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bcd_counter_1m.v
+    Info (12023): Found entity 1: bcd_counter_1m File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/bcd_counter_1m.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bcd_counter_10m.v
+    Info (12023): Found entity 1: bcd_counter_10m File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/bcd_counter_10m.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file seven_seg_digit_alt.v
+    Info (12023): Found entity 1: seven_seg_digit_alt File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/seven_seg_digit_alt.v Line: 1
+Info (12127): Elaborating entity "mef" for the top level hierarchy
+Warning (10272): Verilog HDL Case Statement warning at mef.v(38): case item expression covers a value already covered by a previous case item File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v Line: 38
+Warning (10272): Verilog HDL Case Statement warning at mef.v(47): case item expression covers a value already covered by a previous case item File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v Line: 47
+Warning (10272): Verilog HDL Case Statement warning at mef.v(56): case item expression covers a value already covered by a previous case item File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v Line: 56
+Warning (10272): Verilog HDL Case Statement warning at mef.v(63): case item expression covers a value already covered by a previous case item File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v Line: 63
+Warning (10272): Verilog HDL Case Statement warning at mef.v(99): case item expression covers a value already covered by a previous case item File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v Line: 99
+Warning (10272): Verilog HDL Case Statement warning at mef.v(109): case item expression covers a value already covered by a previous case item File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v Line: 109
+Warning (10272): Verilog HDL Case Statement warning at mef.v(119): case item expression covers a value already covered by a previous case item File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v Line: 119
+Warning (10272): Verilog HDL Case Statement warning at mef.v(129): case item expression covers a value already covered by a previous case item File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v Line: 129
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "Gotejamento" is stuck at GND File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v Line: 6
+    Warning (13410): Pin "Aspersao" is stuck at GND File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v Line: 6
+    Warning (13410): Pin "Limpando" is stuck at GND File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v Line: 6
+    Warning (13410): Pin "Erro" is stuck at GND File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v Line: 6
+Info (17049): 2 registers lost all their fanouts during netlist optimizations.
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "M" File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v Line: 5
+    Warning (15610): No output dependent on input pin "Ve" File: /home/aluno/Documentos/CD-PBL3-M-quina-de-Estados/mef.v Line: 5
+Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 6 output pins
+    Info (21061): Implemented 4 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 340 megabytes
+    Info: Processing ended: Wed Jul 17 14:23:00 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:11
+
+

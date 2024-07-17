@@ -1,0 +1,5 @@
+
+State Machine - |mef|Estado
+Name Estado.E_Cheio 
+Estado.E_Enchendo 0 
+Estado.E_Cheio 1 

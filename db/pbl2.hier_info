@@ -1,0 +1,43 @@
+|mef
+L => Estado.OUTPUTSELECT
+L => Estado.OUTPUTSELECT
+L => Estado.OUTPUTSELECT
+L => Estado.OUTPUTSELECT
+L => Estado.DATAA
+L => Estado.DATAA
+M => ~NO_FANOUT~
+H => Selector1.IN9
+H => Selector0.IN1
+Bs => Estado.OUTPUTSELECT
+Bs => Estado.OUTPUTSELECT
+Bs => Estado.OUTPUTSELECT
+Bs => Estado.OUTPUTSELECT
+Vs => Estado.OUTPUTSELECT
+Vs => Estado.OUTPUTSELECT
+Vs => Estado.OUTPUTSELECT
+Vs => Estado.OUTPUTSELECT
+Ve => ~NO_FANOUT~
+E => Estado.OUTPUTSELECT
+E => Estado.OUTPUTSELECT
+E => Estado.OUTPUTSELECT
+E => Estado.OUTPUTSELECT
+E => Estado.OUTPUTSELECT
+E => Estado.OUTPUTSELECT
+E => Selector1.IN10
+E => Selector0.IN5
+Clk => Erro~reg0.CLK
+Clk => Limpando~reg0.CLK
+Clk => Aspersao~reg0.CLK
+Clk => Gotejamento~reg0.CLK
+Clk => Cheio~reg0.CLK
+Clk => Enchendo~reg0.CLK
+Clk => Estado~3.DATAIN
+Rst => Estado~5.DATAIN
+Enchendo << Enchendo~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Cheio << Cheio~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Gotejamento << Gotejamento~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Aspersao << Aspersao~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Limpando << Limpando~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Erro << Erro~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

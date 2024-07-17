@@ -1,13 +1,13 @@
 // Módulo da Máquina de Estados:
-module mef (L, M, H, Bs, Vs, Ve, Al, Clk, Rst, Enchendo, Cheio, Gotejamento, Aspersao, Limpando, Alarme);
+module mef (L, M, H, Bs, Vs, Ve, E, Clk, Rst, Enchendo, Cheio, Gotejamento, Aspersao, Limpando, Erro);
 
 	// Entradas e Saídas:
-	input L, M, H, Bs, Vs, Ve, Al, Clk, Rst;
-	output reg Enchendo, Cheio, Gotejamento, Aspersao, Limpando, Alarme;
+	input L, M, H, Bs, Vs, Ve, E, Clk, Rst;
+	output reg Enchendo, Cheio, Gotejamento, Aspersao, Limpando, Erro;
 	
 	// Declaração dos Estados:
 	reg [2:0] Estado;
-	parameter E_Enchendo = 0, E_Cheio = 1, E_Gotejamento = 2, E_Aspersao = 3, E_Limpando = 4, E_Alarme = 5;
+	parameter E_Enchendo = 3'b000, E_Cheio = 3'b001, E_Gotejamento = 3'b010, E_Aspersao = 3'b011, E_Limpando = 3'b100, E_Erro = 3'b101;
 	
 	always @ (posedge Clk or posedge Rst) begin
 		if (Rst)
@@ -16,19 +16,19 @@ module mef (L, M, H, Bs, Vs, Ve, Al, Clk, Rst, Enchendo, Cheio, Gotejamento, Asp
 			case (Estado)
 				// Estado de Enchendo:
 				E_Enchendo:
-					if (H)
+					if (H) // in_enchendo contador 0001 0000 
 						Estado <= E_Cheio;
-					else if (Bs)
-						Estado <= E_Aspersao;
-					else if (Vs)
-						Estado <= E_Gotejamento;
 					else
 						Estado <= E_Enchendo;
 				
 				// Estado de Cheio:
 				E_Cheio:
-					if (Al)
-						Estado <= E_Alarme;
+					if (E)
+						Estado <= E_Erro;
+					else if (Bs)
+						Estado <= E_Aspersao;
+					else if (Vs)
+						Estado <= E_Gotejamento;
 					else if (L)
 						Estado <= E_Limpando;
 					else
@@ -36,35 +36,35 @@ module mef (L, M, H, Bs, Vs, Ve, Al, Clk, Rst, Enchendo, Cheio, Gotejamento, Asp
 				
 				// Estado de Aspersão:
 				E_Aspersao:
-					if (Al)
-						Estado <= E_Alarme;
+					if (E)
+						Estado <= E_Erro;
 					else if (L)
 						Estado <= E_Limpando;
-					else
+					else if (Bs)
 						Estado <= E_Aspersao;
 				
 				// Estado de Gotejamento:
 				E_Gotejamento:
-					if (Al)
-						Estado <= E_Alarme;
+					if (E)
+						Estado <= E_Erro;
 					else if (L)
 						Estado <= E_Limpando;
-					else
+					else if (Vs)
 						Estado <= E_Gotejamento;
 				
 				// Estado de Limpeza:
-				E_Limpando:
+				E_Limpando: // Verificar as condiçoes pra confirmar isso aqui
 					if (Ve)
 						Estado <= E_Enchendo;
 					else
 						Estado <= E_Limpando;
 				
-				// Estado de Alarme:
-				E_Alarme:
-					if (!Al)
+				// Estado de Erro:
+				E_Erro:
+					if (!E)
 						Estado <= E_Enchendo;
 					else
-						Estado <= E_Alarme;
+						Estado <= E_Erro;
 				
 				// Estado Inicial:
 				default:
@@ -82,7 +82,8 @@ module mef (L, M, H, Bs, Vs, Ve, Al, Clk, Rst, Enchendo, Cheio, Gotejamento, Asp
 					Gotejamento <= 1'b0;
 					Aspersao <= 1'b0;
 					Limpando <= 1'b0;
-					Alarme <= 1'b0;
+					Erro <= 1'b0;
+					// contadores
 				end
 				
 			E_Cheio:
@@ -92,7 +93,7 @@ module mef (L, M, H, Bs, Vs, Ve, Al, Clk, Rst, Enchendo, Cheio, Gotejamento, Asp
 					Gotejamento <= 1'b0;
 					Aspersao <= 1'b0;
 					Limpando <= 1'b0;
-					Alarme <= 1'b0;
+					Erro <= 1'b0;
 				end
 				
 			E_Aspersao:
@@ -102,7 +103,7 @@ module mef (L, M, H, Bs, Vs, Ve, Al, Clk, Rst, Enchendo, Cheio, Gotejamento, Asp
 					Gotejamento <= 1'b0;
 					Aspersao <= 1'b1;
 					Limpando <= 1'b0;
-					Alarme <= 1'b0;
+					Erro <= 1'b0;
 				end
 				
 			E_Gotejamento:
@@ -112,7 +113,7 @@ module mef (L, M, H, Bs, Vs, Ve, Al, Clk, Rst, Enchendo, Cheio, Gotejamento, Asp
 					Gotejamento <= 1'b1;
 					Aspersao <= 1'b0;
 					Limpando <= 1'b0;
-					Alarme <= 1'b0;
+					Erro <= 1'b0;
 				end
 				
 			E_Limpando:
@@ -122,17 +123,17 @@ module mef (L, M, H, Bs, Vs, Ve, Al, Clk, Rst, Enchendo, Cheio, Gotejamento, Asp
 					Gotejamento <= 1'b0;
 					Aspersao <= 1'b0;
 					Limpando <= 1'b1;
-					Alarme <= 1'b0;
+					Erro  <= 1'b0;
 				end
 				
-			E_Alarme:
+			E_Erro:
 				begin
 					Enchendo <= 1'b0;
 					Cheio <= 1'b0;
 					Gotejamento <= 1'b0;
 					Aspersao <= 1'b0;
 					Limpando <= 1'b0;
-					Alarme <= 1'b1;
+					Erro  <= 1'b1;
 				end
 				
 			default:
@@ -142,7 +143,7 @@ module mef (L, M, H, Bs, Vs, Ve, Al, Clk, Rst, Enchendo, Cheio, Gotejamento, Asp
 					Gotejamento <= 1'b0;
 					Aspersao <= 1'b0;
 					Limpando <= 1'b0;
-					Alarme <= 1'b0;
+					Erro  <= 1'b0;
 				end
 		endcase
 	end
