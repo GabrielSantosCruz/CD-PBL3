@@ -8,67 +8,96 @@ module maquina (
   parameter E_Enchendo = 0, E_Cheio = 1, E_Aspersao = 2, E_Gotejamento = 3, E_Limpeza = 4, E_Erro = 5;
 
   always @ (posedge Clock or posedge Reset) begin
-    if (Reset)
+    if (Reset) begin
       Estado <= E_Enchendo;
-    
-    else
+    end
+
+    else begin
       case (Estado)
         
-        // ESTADO "ENCHENDO":
+        // TRANSIÇÕES DO ESTADO "ENCHENDO":
         E_Enchendo:
-          if (Ve)
+          if (Ve) begin
             Estado <= E_Enchendo;
-          else if (E)
-            Estado <= E_Erro;
-          else if (L)
-            Estado <= E_Limpando;
+          end
 
-        // ESTADO "CHEIO":
+          else if (E) begin
+            Estado <= E_Erro;
+          end
+
+          else if (L) begin
+            Estado <= E_Limpando;
+          end
+
+        // TRANSIÇÕES DO ESTADO "CHEIO":
         E_Cheio:
-          if (Bs)
+          if (Bs) begin 
             Estado <= E_Aspersao;
-          else if (Vs)
-            Estado <= E_Gotejamento;
-          else
-            Estado <= E_Cheio;
-        
-        // ESTADO "ASPERSÃO":
-        E_Aspersao:
-          if (E)
-            Estado <= E_Erro;
-          else if (L)
-            Estado <= E_Limpando;
-          else
-            Estado <= E_Aspersao;
-        
-        // ESTADO "GOTEJAMENTO":
-        E_Gotejamento:
-          if (E)
-            Estado <= E_Erro;
-          else if (L)
-            Estado <= E_Limpando;
-          else
-            Estado <= E_Gotejamento;
+          end
 
-        // ESTADO "LIMPANDO":
-        E_Limpando:
-          if (Ve)
-            Estado <= E_Enchendo;
-          else
-            Estado <= E_Limpando;
+          else if (Vs) begin
+            Estado <= E_Gotejamento;
+          end
+
+          else begin
+            Estado <= E_Cheio;
+          end          
         
-        // ESTADO "ERRO":
-        E_Erro:
-          if (!E)
-            Estado <= E_Enchendo;
-          else
+        // TRANSIÇÕES DO ESTADO "ASPERSÃO":
+        E_Aspersao:
+          if (E) begin
             Estado <= E_Erro;
+          end
+
+          else if (L) begin
+            Estado <= E_Limpando;
+          end
+
+          else begin
+            Estado <= E_Aspersao;
+          end
+
+        // TRANSIÇÕES DO ESTADO "GOTEJAMENTO":
+        E_Gotejamento:
+          if (E) begin
+            Estado <= E_Erro;
+          end
+
+          else if (L) begin
+            Estado <= E_Limpando;
+          end
+
+          else begin
+            Estado <= E_Gotejamento;
+          end
+
+        // TRANSIÇÕES DO ESTADO "LIMPANDO":
+        E_Limpando:
+          if (Ve) begin
+            Estado <= E_Enchendo;
+          end
+
+          else begin
+            Estado <= E_Limpando;
+          end
         
-        // ESTADO PADRÃO:
+        // TRANSIÇÕES DO ESTADO "ERRO":
+        E_Erro:
+          if (!E) begin
+            Estado <= E_Enchendo;
+          end
+
+          else begin
+            Estado <= E_Erro;
+          end
+        
+        // DEFININDO O ESTADO PADRÃO:
         default:
           Estado <= E_Enchendo;
       
       encase
+    
+    end
   
   end
 
@@ -82,48 +111,48 @@ module maquina (
     S_Erro = 1'b0;
 
     case (Estado)
-      E_Enchendo:
-        if (Ve)
-          begin
-            S_Enchendo = 1'b1;
-          end
 
+      // SAÍDA DO ESTADO "ENCHENDO":      
+      E_Enchendo:
+        if (Ve) begin
+          S_Enchendo = 1'b1;
+        end
+
+      // SAÍDA DO ESTADO "CHEIO":
       E_Cheio:
-        if (H)
-          begin
-            S_Cheio = 1'b1;
-          end
+        if (H) begin
+          S_Cheio = 1'b1;
+        end
       
+      // SAÍDA DO ESTADO "ASPERSÃO":
       E_Aspersao:
-        if (Bs)
-          begin
-            S_Aspersao = 1'b1;
-          end
+        if (Bs) begin
+          S_Aspersao = 1'b1;
+        end
         
-        else if (Bs_Ag)
-          begin
-            S_Aspersao = 1'b1;
-            S_Agro = 1'b1;
-          end
+        else if (Bs_Ag) begin
+          S_Aspersao = 1'b1;
+          S_Agro = 1'b1;
+        end
       
+      // SAÍDA DO ESTADO "GOTEJAMENTO":
       E_Gotejamento:
-        if (Vs)
-          begin
-            S_Gotejamento = 1'b1;
-          end
+        if (Vs) begin
+          S_Gotejamento = 1'b1;
+        end
       
+      // SAÍDA DO ESTADO "LIMPANDO":
       E_Limpando:
-        if (L)
-          begin
-            S_Limpeza = 1'b1;
-            S_SaidaLimpeza = 1'b1;
-          end
+        if (L) begin
+          S_Limpeza = 1'b1;
+          S_SaidaLimpeza = 1'b1;
+        end
       
+      // // SAÍDA DO ESTADO "ERRO":
       E_Erro:
-        if (E)
-          begin
-            S_Erro = 1'b1;
-          end
+        if (E) begin
+          S_Erro = 1'b1;
+        end
       
     endcase
 
