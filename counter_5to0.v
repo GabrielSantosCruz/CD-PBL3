@@ -1,15 +1,15 @@
-module counter_5to0(clock, bcd, Bs, Vs, Error); // contador que vai de 9 a 0
+module counter_5to0(clock, bcd, Bs, Vs, Error, pause); // contador que vai de 9 a 0
 
-    input clock, Bs, Vs, Error;
+    input clock, Bs, Vs, Error, pause;
 	output [3:0] bcd;
 	
 	wire A, B, C, D; // A é o mais significativo
 	wire d0, d1, d2, d3; // Valores das entradas "D" dos flip-flops
 	
 	assign d3 = (0);
-	assign d2 = (!B & !C & !D || B & D);
-	assign d1 = (B & !D || C & D);
-	assign d0 = !D;
+	assign d2 = (!B & !C & !D || B & D) && (Bs || Vs) && !Error && !pause;
+	assign d1 = (B & !D || C & D) && (Bs || Vs) && !Error && !pause;
+	assign d0 = !D && (Bs || Vs) && !Error && !pause;
 	
 	flipflop_D c0(.D(d3), .clock(clock), .Q(A));
 	flipflop_D c1(.D(d2), .clock(clock), .Q(B));

@@ -1,6 +1,7 @@
-module from_50mhz_to_1hz (clock, one_second_clock, clock_mostradores);
-	input clock;
-	output one_second_clock, clock_mostradores;
+module from_50mhz_to_1hz (
+	input clock,
+	output one_second_clock, clock_mostradores, clock_7seg
+);
 	
 	// Fios para cascateamento de divisores de clock:
 	wire w0, w1, w2, w3, w4, w5, w6, w7, w8, w9,
@@ -29,8 +30,8 @@ module from_50mhz_to_1hz (clock, one_second_clock, clock_mostradores);
 	clock_divisor d18(.clock(w16), .divided_clock(w17)); // 10.240 us
 	clock_divisor d19(.clock(w17), .divided_clock(w18)); // 20.480 us
 	clock_divisor d20(.clock(w18), .divided_clock(w19)); // 40.960 us
-	clock_divisor d21(.clock(w19), .divided_clock(w20)); // 81.920 us
-	clock_divisor d22(.clock(w20), .divided_clock(w21)); // 163.840 us
+	clock_divisor d21(.clock(w19), .divided_clock(clock_7seg)); // 81.920 us
+	clock_divisor d22(.clock(clock_7seg), .divided_clock(w21)); // 163.840 us
 	clock_divisor d23(.clock(w21), .divided_clock(w22)); // 327.680 us
 	clock_divisor d24(.clock(w22), .divided_clock(w23)); // 655.360 us
 	clock_divisor d25(.clock(w23), .divided_clock(one_second_clock)); // 1.310.720 us -> 1.3 segundos

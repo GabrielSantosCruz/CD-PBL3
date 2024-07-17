@@ -1,8 +1,9 @@
-module pbl1(H, M, L, Bs, Vs, Ve, Us, Ua, T, Al, E, clock, column, lines, segA, segB, segC, segD, segE, segF, segG, seven_seg_digit);
+module pbl1(H, M, L, Bs, Vs, Ve, Us, Ua, Key_Ad, Ad, T, Al, E, clock, column, lines, segA, segB, segC, segD, segE, segF, segG, seven_seg_digit, seven_seg_digit_of);
 	// Declaração das Portas
-	input H, M, L, T, Us, Ua, clock;
-	output Bs, Vs, Ve, Al, E, segA, segB, segC, segD, segE, segF, segG;
-	output [3:0] seven_seg_digit;
+	input H, M, L, T, Us, Ua, clock, Key_Ad;
+	output Bs, Vs, Ve, Al, E, Ad, segA, segB, segC, segD, segE, segF, segG;
+	output [1:0] seven_seg_digit;
+	output [1:0] seven_seg_digit_of;
 	output [4:0] column;
 	output [6:0] lines;
 	
@@ -38,9 +39,12 @@ module pbl1(H, M, L, Bs, Vs, Ve, Us, Ua, T, Al, E, clock, column, lines, segA, s
 	or or3 (W13, W10, W12);
 	not not2 (W14, Al);
 	and and4 (Vs, W13, W14);
-		
+	
+	// AGRODEFENSIVO
+	and (Ad, Bs, Key_Ad);
+	
 	// Instancionando o Módulo que Implementa o PBL 2 e sua Melhorias:
 	pbl2 part2(.H(H), .M(M), .L(L), .Bs(Bs), .Vs(Vs), .clock(clock), .column(column), .lines(lines), .A(segA),
-	.B(segB), .C(segC), .D(segD), .E(segE), .F(segF), .G(segG), .seven_seg_digit(seven_seg_digit), .Error(E));
+	.B(segB), .C(segC), .D(segD), .E(segE), .F(segF), .G(segG), .seven_seg_digit(seven_seg_digit), .seven_seg_digit_of(seven_seg_digit_of), .Error(E));
 	
 endmodule 

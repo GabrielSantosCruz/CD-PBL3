@@ -1,7 +1,7 @@
-module counter_3to0(Bbcd, bcd); // contador que vai de 9 a 0
+module counter_3to0(Bbcd, bcd, K_end); // contador que vai de 9 a 0
 
    input [3:0] Bbcd;
-	output [3:0] bcd;
+	output [3:0] bcd, K_end;
 	
 	wire clock;
 	assign clock = (!Bbcd[3] & !Bbcd[2] & !Bbcd[1] & !Bbcd[0]);
@@ -22,5 +22,8 @@ module counter_3to0(Bbcd, bcd); // contador que vai de 9 a 0
 	assign bcd[2] = B;
 	assign bcd[1] = C;
 	assign bcd[0] = D;
+	
+	// para enviar um sinal positivo quando esse contador chegar a 0000
+	assign K_end = (!bcd[3] & !bcd[2] & !Bbcd[1] & !bcd[0]);
 
 endmodule 
